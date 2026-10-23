@@ -1,787 +1,619 @@
 <div align="center">
 
-<a href="https://github.com/Qustylex">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=280&section=header&color=0:050505,35:13091F,70:38145B,100:8B5CF6&text=QUSTYLEX&fontSize=72&fontColor=FFFFFF&fontAlignY=37&desc=OPEN-SOURCE%20INTELLIGENCE%20%2F%20CYBERSECURITY&descSize=13&descColor=D8C5FF&descAlignY=56&animation=fadeIn" width="100%" alt="Qustylex — OSINT and Cybersecurity"/>
-</a>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=200&color=000000&text=QUSTYLEX&fontSize=76&fontColor=FFFFFF&fontAlignY=50&desc=INTELLIGENCE%20%C2%B7%20SECURITY%20%C2%B7%20INVESTIGATION&descSize=16&descColor=FFFFFF&descAlignY=72" width="100%" alt="Qustylex"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=2800&pause=1000&color=B794F6&center=true&vCenter=true&repeat=true&width=600&height=35&lines=INTELLIGENCE+IS+BUILT%2C+NOT+ASSUMED.;RESEARCH.+ANALYZE.+UNDERSTAND.;THE+DIGITAL+WORLD%2C+UNDER+A+CLOSER+LOOK.;QUSTYLEX+%2F%2F+CURRENTLY+IN+DEVELOPMENT." alt="Qustylex animated tagline"/>
+**THE DIGITAL WORLD IS VAST. YOUR RESEARCH SHOULD NOT BE FRAGMENTED.**
+
+<br/>
+
+An integrated platform for open-source intelligence, operational security, cybersecurity research, and digital investigation, built around a curated library of more than 1,200 selected tools.
+
+<br/>
+
+<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/RESOURCE_LIBRARY-1200%2B_TOOLS-000000?style=for-the-badge&labelColor=000000" alt="1200+ tools"/></a>
+<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/FOCUS-OSINT_%2F_OPSEC-000000?style=for-the-badge&labelColor=000000" alt="OSINT and OPSEC"/></a>
+<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/STATUS-APPROACHING_RELEASE-000000?style=for-the-badge&labelColor=000000" alt="Approaching release"/></a>
 
 <br/><br/>
 
-<a href="https://github.com/Qustylex">
-  <img src="https://img.shields.io/badge/PROJECT-IN_DEVELOPMENT-17121F?style=for-the-badge&labelColor=09070D&color=7040A0" alt="Project in development"/>
-</a>
-<a href="https://github.com/Qustylex">
-  <img src="https://img.shields.io/badge/FOCUS-OSINT-17121F?style=for-the-badge&labelColor=09070D&color=7040A0" alt="OSINT"/>
-</a>
-<a href="https://github.com/Qustylex">
-  <img src="https://img.shields.io/badge/DOMAIN-CYBERSECURITY-17121F?style=for-the-badge&labelColor=09070D&color=7040A0" alt="Cybersecurity"/>
-</a>
+**Last updated: October 23, 2026**
 
-<br/><br/>
+<br/>
 
-**INDEPENDENT PROJECT · BUILT AROUND DIGITAL INTELLIGENCE**
-
-<br/><br/>
-
-<a href="https://github.com/Qustylex">
-  <img src="https://img.shields.io/badge/GITHUB-QUSTYLEX-09070D?style=flat-square&logo=github&logoColor=B794F6" alt="Qustylex GitHub"/>
-</a>
-<a href="https://x.com/Qustylex">
-  <img src="https://img.shields.io/badge/X-FOLLOW-09070D?style=flat-square&logo=x&logoColor=B794F6" alt="Qustylex on X"/>
-</a>
-
-<br/><br/>
-
-> **Beyond the visible.**
->
-> Research the public. Understand the digital. Protect what matters.
+<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/GITHUB-QUSTYLEX-000000?style=flat-square&labelColor=000000" alt="GitHub"/></a>
+<a href="https://x.com/Qustylex"><img src="https://img.shields.io/badge/X-QUSTYLEX-000000?style=flat-square&labelColor=000000" alt="X"/></a>
+<a href="https://www.youtube.com/@Qustylex"><img src="https://img.shields.io/badge/YOUTUBE-QUSTYLEX-000000?style=flat-square&labelColor=000000" alt="YouTube"/></a>
+<a href="https://www.tiktok.com/@qsyzly"><img src="https://img.shields.io/badge/TIKTOK-QSYZLY-000000?style=flat-square&labelColor=000000" alt="TikTok"/></a>
+<a href="https://discord.gg/tUFVKTF456"><img src="https://img.shields.io/badge/DISCORD-COMMUNITY-000000?style=flat-square&labelColor=000000" alt="Discord"/></a>
 
 </div>
 
-<br/>
+---
+
+## Table of Contents
+
+- [01. Introduction](#01-introduction)
+- [02. Vision](#02-vision)
+- [03. Platform at a Glance](#03-platform-at-a-glance)
+- [04. Intelligence](#04-intelligence)
+- [05. Defense](#05-defense)
+- [06. Offense](#06-offense)
+- [07. Infrastructure](#07-infrastructure)
+- [08. Resources](#08-resources)
+- [09. URL Scanner](#09-url-scanner)
+- [10. The 1,200+ Tool Library](#10-the-1200-tool-library)
+- [11. Browsers and OPSEC Tools](#11-browsers-and-opsec-tools)
+- [12. Research Methodology](#12-research-methodology)
+- [13. Security and Privacy](#13-security-and-privacy)
+- [14. Responsible Use](#14-responsible-use)
+- [15. Intended Audience](#15-intended-audience)
+- [16. Getting Started](#16-getting-started)
+- [17. Design Principles](#17-design-principles)
+- [18. Roadmap](#18-roadmap)
+- [19. Contributing and Reporting](#19-contributing-and-reporting)
+- [20. Frequently Asked Questions](#20-frequently-asked-questions)
+- [21. Changelog](#21-changelog)
+- [22. Community and Contact](#22-community-and-contact)
+- [23. License](#23-license)
 
 ---
 
-<br/>
+## 01. Introduction
 
-## Introduction
+Intelligence is not about collecting more. It is about understanding better.
 
-**Qustylex** is an independent project in development focused on Open-Source Intelligence, cybersecurity research, digital investigation, and the analysis of publicly available information.
+The modern digital environment is an interconnected landscape of public information, online services, network infrastructure, software repositories, security signals, technical documentation, and continuously changing digital assets. Every day, an enormous quantity of information becomes available through publicly accessible sources. Yet access to information alone does not guarantee understanding. Valuable findings are frequently scattered across unrelated services, documented inconsistently, or separated from the context required to interpret them correctly.
 
-The idea behind Qustylex is straightforward: the digital world contains an enormous amount of information, but meaningful intelligence comes from knowing how to find it, verify it, connect it, and interpret it.
+Qustylex exists to make this process more structured. It is an independent intelligence and cybersecurity platform built around the disciplines of Open-Source Intelligence (OSINT), Operational Security (OPSEC), cybersecurity research, digital investigation, and research automation. It brings together a curated collection of more than 1,200 tools and resources and presents them through a dashboard organized by purpose, so that a researcher can move from a question to a suitable resource without losing time or context.
 
-The project aims to explore the intersection between digital intelligence and security through research, technical experimentation, documentation, and the potential development of practical tools.
+The platform is designed for the way research actually happens. A question about a website may involve its domain history, its certificates, its public infrastructure, and the reliability of the sources describing it. A question about personal privacy may involve browsers, extensions, operating systems, and the discipline of separating one activity from another. Qustylex is built to support these chains of work, not isolated searches.
 
-Qustylex is currently in its early stages. Its identity, research direction, and future projects are being developed progressively.
+Its underlying philosophy is straightforward. Research should be methodical. Evidence should remain traceable. Automation should be controlled. Technical capability should always be accompanied by a clear understanding of its limits. Qustylex does not promise to replace expertise, and it does not claim to make anyone invisible or invulnerable. It promises a better environment in which expertise can work more effectively.
 
-This is the beginning of a larger vision.
-
-<br/>
-
----
-
-<br/>
-
-## 01 / What is Qustylex?
-
-Qustylex is a personal research initiative that treats information as a discipline rather than a commodity. It is not a finished product, and it does not pretend to be one. It is a working foundation, built step by step, with the intention of becoming something more structured over time.
-
-The project is organized around three foundational pillars, each of which represents a distinct area of study and practice. Together, they form the intellectual and technical backbone of everything Qustylex intends to become.
-
-<br/>
-
-<details open>
-<summary><strong>Digital Intelligence</strong></summary>
-
-<br/>
-
-Digital intelligence is the study of publicly available information and the methods used to transform scattered sources into structured, contextualized research. It is not simply the act of searching, but the act of understanding what is being found, why it matters, and how it connects to everything else.
-
-This pillar focuses on the collection and organization of open information, the identification of relevant sources, the validation of what those sources claim, and the construction of a coherent picture from fragments that were never designed to be read together. It is equal parts methodology, curiosity, and discipline.
-
-Digital intelligence is the lens through which Qustylex looks at the world.
-
-</details>
-
-<br/>
-
-<details open>
-<summary><strong>Cybersecurity Research</strong></summary>
-
-<br/>
-
-Cybersecurity research is the exploration of security concepts, digital infrastructure, defensive practices, vulnerabilities, and the techniques required to understand how systems actually operate. It is the study of both the strengths and the weaknesses of the digital environment, approached with precision and respect for the boundaries that separate research from intrusion.
-
-This pillar covers everything from foundational security principles to the practical realities of how networks, applications, and protocols behave under pressure. It is about understanding systems well enough to reason about them clearly, and about applying that understanding toward defensive, lawful, and responsible ends.
-
-Cybersecurity research is the discipline that keeps Qustylex grounded in reality.
-
-</details>
-
-<br/>
-
-<details open>
-<summary><strong>Technical Development</strong></summary>
-
-<br/>
-
-Technical development is the investigation of tools, scripts, and workflows that may improve the efficiency, organization, and reproducibility of digital research. It is the practical arm of the project, the place where methodology becomes something that can actually be executed, tested, and repeated.
-
-This pillar focuses on the construction of small, purposeful utilities, the documentation of technical experiments, and the gradual assembly of a toolkit that supports research rather than replacing it. It is not about building for the sake of building, but about building what the research actually needs.
-
-Technical development is the craft that gives Qustylex its shape.
-
-</details>
-
-<br/>
-
-Qustylex is being developed with a focus on technical curiosity, methodical analysis, responsible research, and a clean approach to information. Every part of the project is intended to reflect those values, from the way sources are documented to the way tools are written.
-
-<br/>
-
----
-
-<br/>
-
-## 02 / Core Research Areas
-
-The research interests of Qustylex are divided into four overlapping domains. Each one informs the others, and none of them exists in isolation. Together, they describe the space in which the project operates.
+The objective is to reduce unnecessary fragmentation without sacrificing flexibility, transparency, or technical depth.
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/01-OSINT-26143A?style=for-the-badge&labelColor=09070D" alt="OSINT"/>
-<img src="https://img.shields.io/badge/02-SECURITY-26143A?style=for-the-badge&labelColor=09070D" alt="Security"/>
-<img src="https://img.shields.io/badge/03-INVESTIGATION-26143A?style=for-the-badge&labelColor=09070D" alt="Investigation"/>
-<img src="https://img.shields.io/badge/04-AUTOMATION-26143A?style=for-the-badge&labelColor=09070D" alt="Automation"/>
+**One ecosystem. Multiple disciplines. A clearer approach to intelligence.**
 
 </div>
-
-<br/>
-
-### Open-Source Intelligence
-
-OSINT involves the discovery, collection, verification, and analysis of information obtained from publicly accessible sources. It is the art of finding what is already visible, and then understanding it well enough to extract meaning that was not immediately obvious.
-
-The purpose of OSINT is not to uncover secrets, but to make sense of what is already public. Most of the information that matters is not hidden. It is simply scattered, unorganized, and disconnected from the context that would give it value. OSINT is the practice of restoring that context.
-
-Potential research areas include:
-
-- Public-source intelligence and information discovery.
-- Domain intelligence and DNS research.
-- Internet infrastructure and certificate transparency.
-- Public repositories and technical documentation.
-- Digital footprint awareness.
-- Image verification and geolocation research.
-- Source validation and information correlation.
-- Structured research notes and reporting.
-
-Each of these areas represents a different angle on the same problem: how to turn open information into something that can be understood, trusted, and used responsibly.
-
-<br/>
-
-### Cybersecurity
-
-Security research focuses on understanding how digital systems function, how weaknesses arise, and how systems can be made more resilient. It is the study of both what works and what fails, approached with the intention of improving the former and mitigating the latter.
-
-This domain is not about exploitation for its own sake. It is about comprehension. A system cannot be defended without being understood, and it cannot be understood without being examined carefully, lawfully, and with respect for the people who depend on it.
-
-Potential research areas include:
-
-- Security fundamentals and threat modeling.
-- Web application security.
-- Network protocols and infrastructure.
-- Vulnerability analysis and remediation.
-- Secure software development.
-- Defensive monitoring and incident analysis.
-- Authorized security testing.
-- Security automation.
-
-The goal is not to master every tool, but to develop a way of thinking that applies to any system, any protocol, and any threat model.
-
-<br/>
-
-### Digital Investigation
-
-Digital investigation requires more than finding information. It requires understanding context, evaluating sources, identifying inconsistencies, and documenting findings carefully. It is the slow, deliberate work of building a conclusion that can survive scrutiny.
-
-An investigation is not complete when an answer is found. It is complete when the path to that answer can be retraced, questioned, and verified by someone else. That standard is what separates research from speculation.
-
-Qustylex aims to explore structured investigation workflows in which conclusions remain grounded in available evidence. Every finding should be traceable. Every assumption should be labeled as such. Every uncertainty should be documented rather than hidden.
-
-<br/>
-
-### Research Automation
-
-Automation can make repetitive research tasks more efficient and consistent. It cannot replace judgment, but it can remove the friction that prevents judgment from being applied where it matters most.
-
-The purpose of automation within Qustylex is not to accelerate research at the expense of accuracy, but to standardize the mechanical parts of it so that human attention can be reserved for interpretation and analysis.
-
-Potential applications include information normalization, structured output, metadata processing, and utilities that simplify lawful public-source research. Each of these serves the same goal: reducing the distance between a question and a well-supported answer.
-
-<br/>
 
 ---
 
-<br/>
+## 02. Vision
 
-## 03 / The Qustylex Standard
+### From fragmented resources to structured intelligence
 
-<div align="center">
+Digital research rarely happens in one place. An investigator might begin with a domain name, move to its DNS records, examine certificate transparency data, look through publicly available repositories, compare infrastructure relationships, review security advisories, and finally assemble a report from findings collected across several independent tools. Each individual step may be simple. The difficulty lies in maintaining continuity between them.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&section=header&color=0:09070D,50:8B5CF6,100:09070D" width="100%" alt="Purple divider"/>
+Information becomes hard to manage when outputs are disconnected, sources are forgotten, the context of an investigation is lost, and repetitive operations must be rebuilt by hand each time. Qustylex is designed around the idea that the research process deserves the same attention as the tools used to carry it out.
 
-</div>
+### The pillars of the platform
 
-<br/>
+The platform is built on several complementary concepts that correspond to the stages of real research work.
 
-The Qustylex Standard is a set of principles that governs how the project approaches its work. These principles are not marketing language. They are constraints, and they exist to keep the project honest.
+**Discovery.** Identifying relevant tools, public sources, and technical resources for a specific objective, so that less time is spent searching and more time is spent analyzing.
 
-<br/>
+**Organization.** Presenting resources in categories that reflect their purpose, so that the relationship between a tool and its use is always visible.
 
-### Evidence over assumptions
+**Analysis.** Supporting the examination of findings, the identification of relationships, and the distinction between evidence and assumption.
 
-Every conclusion should be evaluated against its supporting evidence. Uncertainty is part of research, not something to conceal.
+**Automation.** Making repeatable operations easier to standardize and review, without surrendering judgment to the process.
 
-When evidence is incomplete, that fact should be stated. When a source is unreliable, that fact should be recorded. When a conclusion rests on inference rather than observation, that distinction should be made explicit. The value of a finding is determined by the strength of the evidence behind it, not by how confident it sounds.
+**Documentation.** Preserving the methodology, the context, and the limitations behind each result, so that conclusions can be checked and reproduced.
 
-<br/>
+### The principles behind the platform
 
-### Precision over volume
+| Principle | What it means |
+| :--- | :--- |
+| **Clarity** | Every resource is organized in a way that makes its purpose and relevance understandable. |
+| **Traceability** | Findings remain connected to their supporting sources wherever practical. |
+| **Consistency** | Repeatable tasks follow defined procedures rather than relying entirely on memory and improvisation. |
+| **Modularity** | Different disciplines coexist without becoming unnecessarily dependent on one another. |
+| **Control** | Access, visibility, and automated operations remain subject to appropriate permissions. |
+| **Responsibility** | Technical capabilities are used within legitimate, authorized, and privacy-conscious boundaries. |
 
-More information does not necessarily mean better intelligence. Relevant sources and meaningful context matter more than the sheer quantity of material collected.
-
-It is easy to gather data. It is difficult to gather the right data, and even more difficult to present it in a way that makes its relevance clear. Precision means knowing what to include, what to exclude, and why.
-
-<br/>
-
-### Method over improvisation
-
-A clear research process makes findings easier to review, verify, and reproduce. Improvisation can produce results, but it cannot produce results that others can trust.
-
-Method does not mean rigidity. It means having a defined sequence of steps that can be followed, documented, and improved. It means that the same question, asked twice, produces answers that can be compared rather than merely accepted.
-
-<br/>
-
-### Privacy over unnecessary exposure
-
-Research should minimize unnecessary personal-data collection and respect applicable legal and ethical boundaries.
-
-The fact that information is public does not mean that collecting it is appropriate. Research conducted under the Qustylex name is expected to consider not only what is permitted, but what is justified, and to draw a clear line between the two.
-
-<br/>
-
-### Progress over pretence
-
-Qustylex is a project in development. Its public identity should reflect real work, real progress, and clearly defined objectives rather than invented capabilities.
-
-There is no value in claiming more than has been built. Every public statement about the project should be traceable to something that exists, something that has been done, or something that is being actively worked on. Anything else is noise.
-
-<br/>
+The vision is not to replace every existing security tool, and it is not to force every researcher into a single methodology. It is to create an environment in which useful tools, structured investigations, and repeatable processes can work together with clarity and discipline.
 
 ---
 
-<br/>
+## 03. Platform at a Glance
 
-## 04 / The Research Process
+The Qustylex dashboard organizes the platform into five sections, each subdivided into categories. The number beside each category indicates how many tools it currently contains. The sections are designed to be read in sequence, from the observation of public information to the defense and hardening of one's own digital environment.
 
-<div align="center">
+| Section | Category | Tools |
+| :--- | :--- | ---: |
+| **Intelligence** | OSINT | 25 |
+| | Social Media | 11 |
+| | Breach Data | 7 |
+| | Geolocation | 8 |
+| | Dark Web | 5 |
+| **Defense** | Privacy Stack | 20 |
+| | Cryptography | 8 |
+| | Forensics | 10 |
+| **Offense** | Web Security | 14 |
+| | Exploitation | 10 |
+| | All Security Tools | 26 |
+| **Infrastructure** | Operating Systems | 16 |
+| **Resources** | NewsVault | Curated feed |
+| **Utilities** | URL Scanner | Analysis tool |
 
-<img src="https://img.shields.io/badge/01-DEFINE-17121F?style=flat-square&labelColor=09070D" alt="Define"/>
-<img src="https://img.shields.io/badge/02-DISCOVER-17121F?style=flat-square&labelColor=09070D" alt="Discover"/>
-<img src="https://img.shields.io/badge/03-VERIFY-17121F?style=flat-square&labelColor=09070D" alt="Verify"/>
-<img src="https://img.shields.io/badge/04-ANALYZE-17121F?style=flat-square&labelColor=09070D" alt="Analyze"/>
-<img src="https://img.shields.io/badge/05-DOCUMENT-17121F?style=flat-square&labelColor=09070D" alt="Document"/>
+Each category groups tools that share a common purpose. A tool may be relevant to more than one category, and the dashboard reflects this by allowing users to explore the library from multiple angles. The sections that follow describe each area in detail.
 
-</div>
+---
 
-<br/>
+## 04. Intelligence
 
-The research process followed by Qustylex is built around five stages. Each stage has a purpose, and none of them can be skipped without weakening the result.
+The Intelligence section is dedicated to gathering, verifying, and correlating information from publicly accessible sources. It is the starting point for most open-source investigations, and it is the largest area of the dashboard in terms of tools.
+
+### 04.1 OSINT (25 tools)
+
+This is the core category of the platform. It contains utilities and resources for public-source discovery, search-engine research, the correlation of identities across services, domain and infrastructure research, and the verification of online sources. Its tools help move from a single starting point, such as a name, a domain, an account handle, or an image, toward a broader and better-documented understanding of the subject.
+
+Typical uses include mapping the public footprint of an organization, verifying whether a claim is supported by independent sources, locating archived versions of web pages, and building a structured record of what was found and where it was found.
+
+### 04.2 Social Media (11 tools)
+
+This category gathers resources for analyzing publicly available social media content and profiles. Its focus is on public information, on research conducted within the rules of each platform, and on the methods used to verify accounts, posts, and media circulating online.
+
+Social media research is especially sensitive, because the same information that helps verify a claim can also expose private individuals. For this reason, the tools in this category should be used with proportion and restraint, limited to public material that serves a legitimate purpose.
+
+### 04.3 Breach Data (7 tools)
+
+This category contains resources for checking whether an email address, username, or domain appears in publicly reported data breaches. Their primary value is defensive. They allow individuals and organizations to audit their own exposure, understand the consequences of an incident, and decide what actions to take, such as rotating credentials or enabling additional protections.
+
+Breach data should be handled with the utmost care. Results should be used to protect the owner of the information, not to expose or exploit it.
+
+### 04.4 Geolocation (8 tools)
+
+Geolocation tools help verify where an image, video, or other media was captured, using publicly available information such as metadata, landmarks, shadows, vegetation, signage, and mapping services. It is a discipline that rewards patience and rigor, and that punishes assumption.
+
+Geolocation results should always be cross-checked against independent evidence before being presented as fact. A plausible location is not the same as a confirmed one, and the difference matters.
+
+### 04.5 Dark Web (5 tools)
+
+This category contains resources for researching publicly documented dark web services, threat reports, and the monitoring of publicly listed indicators. Its purpose is security analysis and threat intelligence, including the study of how illicit ecosystems are described in public reporting.
+
+Access to illegal services, or to content that is itself illegal, is outside the scope of this platform and is not supported.
+
+---
+
+## 05. Defense
+
+The Defense section is focused on protecting systems, data, and identities. It gathers the tools needed to reduce exposure, secure communications, and examine incidents after they occur.
+
+### 05.1 Privacy Stack (20 tools)
+
+The largest defensive category on the platform. It contains privacy-focused applications and utilities that help reduce the digital footprint of individuals and organizations. Its tools address browser fingerprinting, tracker and script blocking, metadata removal from files and images, secure messaging, encrypted storage, private DNS resolution, and the management of accounts and credentials.
+
+The Privacy Stack is built on a principle that is often overlooked: a privacy tool is only as useful as the user's understanding of what it protects against and what it does not. Each entry is intended to be used with that understanding in mind.
+
+### 05.2 Cryptography (8 tools)
+
+This category contains utilities for encryption, hashing, key management, and the verification of cryptographic operations. Its resources range from practical tools, such as those for encrypting files and verifying checksums, to references that explain how the underlying primitives work and why they are trusted.
+
+Cryptographic tools are powerful and easy to misuse. Users are encouraged to understand the threat model a tool addresses before relying on it, and to avoid implementing cryptography themselves for production purposes.
+
+### 05.3 Forensics (10 tools)
+
+Forensics tools support the examination of digital artifacts. Their functions include file analysis, hash verification, metadata extraction, timeline reconstruction, and the preservation of evidence in a form that can be reviewed.
+
+Investigation requires discipline in its own right. The forensic tools in this category are designed to support methodical work, in which every observation is recorded, every interpretation is labeled, and every limitation is stated. Where formal evidentiary requirements apply, proper preservation and chain-of-custody procedures must be followed in addition to any technical steps.
+
+---
+
+## 06. Offense
+
+The Offense section contains tools used in authorized security testing, vulnerability research, and security education. Every resource in this section is intended for use within an explicitly authorized scope, such as systems the user owns, laboratory environments, capture-the-flag competitions, or programs that expressly permit testing.
+
+Offensive knowledge is part of defensive capability. A defender who understands how a weakness is exploited is better placed to recognize it, prioritize it, and fix it. For that reason, Qustylex includes these resources, and for the same reason, their use is governed by strict boundaries described throughout this document.
+
+### 06.1 Web Security (14 tools)
+
+Utilities for assessing the security of web applications. Their functions include analyzing HTTP traffic, identifying common misconfigurations, examining authentication and session handling, reviewing security headers, and understanding the classes of vulnerability described in widely used references such as the OWASP Top Ten.
+
+These tools support both professional testing and learning. They should be used only against systems for which written authorization exists.
+
+### 06.2 Exploitation (10 tools)
+
+Resources for understanding how vulnerabilities are exploited. Their primary use is the validation of findings, the testing of defenses, and the development of a deeper understanding of security weaknesses in controlled environments.
+
+Use in this category is restricted to authorized testing and educational settings. Understanding an exploit is a legitimate part of defending against it. Deploying an exploit against a system without permission is not permitted, and is not supported by this platform under any circumstances.
+
+### 06.3 All Security Tools (26 tools)
+
+A broader collection of general-purpose security utilities that span several disciplines, including network inspection, vulnerability assessment, service enumeration within authorized scope, and security automation. It is a practical entry point for users who want to explore a wide range of tools before narrowing their focus to a specific discipline.
+
+---
+
+## 07. Infrastructure
+
+The Infrastructure section focuses on the environments in which research and security work are carried out. Its single category, Operating Systems, contains sixteen distributions and environments selected for security research, privacy, digital forensics, penetration testing within authorized scope, and privacy-conscious daily use.
+
+### 07.1 Operating Systems (16 tools)
+
+Each entry describes the intended purpose of the system, its typical use cases, its hardware and software requirements, and the considerations that should be weighed before installation. Some systems are designed for investigation and analysis, others for hardening and daily privacy, and others for education and laboratory work.
+
+Choosing an operating system is a security decision in its own right. The Infrastructure section exists so that this choice can be made deliberately, based on the objective of the user, rather than by default or by popularity alone.
+
+---
+
+## 08. Resources
+
+### 08.1 NewsVault
+
+NewsVault is the platform's dedicated space for information, updates, and reference material. It collects relevant news, security advisories, tool updates, and educational content, organized so that users can stay current without monitoring dozens of sources manually.
+
+Content in NewsVault is curated with the same standard applied to the tool library. Relevance, accuracy, and context matter more than volume. Each item is intended to answer a practical question: what changed, why it matters, and what, if anything, a researcher should do about it.
+
+---
+
+## 09. URL Scanner
+
+The URL Scanner is a utility for analyzing web addresses before they are visited or shared. It helps identify suspicious links, examine the structure of a URL, and gather publicly available context about its destination.
+
+Typical uses include:
+
+- Checking a link received by email, messaging, or social media before opening it.
+- Understanding where a shortened or redirected address actually leads.
+- Collecting initial context about a domain during an investigation.
+- Supporting defensive analysis of phishing and fraud campaigns.
+- Documenting the characteristics of a suspicious link for reporting purposes.
+
+A scanner result is an indicator, not a verdict. A flagged address should be examined further, and a clean result does not guarantee that a destination is safe. The URL Scanner is most effective when its output is combined with the user's own judgment and with the other categories of the platform.
+
+---
+
+## 10. The 1,200+ Tool Library
+
+Beyond the dashboard categories, Qustylex maintains a broader library of more than 1,200 selected tools and resources spanning OSINT, OPSEC, cybersecurity, reconnaissance, digital forensics, privacy, network analysis, and related technical disciplines.
+
+Finding the right resource can take as long as performing the research itself. Useful tools are distributed across independent repositories, specialist websites, documentation portals, and community forums. Many require considerable familiarity with the field before their value can be judged. The Qustylex library brings this landscape into one structured and navigable experience, so that the search for a tool becomes a matter of minutes rather than days.
+
+### 10.1 Domains covered
+
+| Domain | Scope |
+| :--- | :--- |
+| **OSINT** | Public-source discovery, information gathering, source verification, and correlation. |
+| **OPSEC** | Operational awareness, exposure reduction, compartmentalization, and privacy practice. |
+| **Reconnaissance** | Authorized asset discovery, domain research, and attack-surface assessment. |
+| **DNS and Domains** | DNS records, domain registration data, subdomains, and related infrastructure. |
+| **Certificate Intelligence** | Certificate Transparency research and publicly observable certificate relationships. |
+| **Network Analysis** | Protocol inspection, traffic analysis, network diagnostics, and troubleshooting. |
+| **Web Security** | Application security, authorized testing, secure configuration, and vulnerability research. |
+| **Threat Intelligence** | Public threat reports, indicators of compromise, advisories, and contextual analysis. |
+| **Digital Forensics** | Artifact examination, forensic utilities, and investigative methodology. |
+| **Privacy and Anonymity** | Privacy awareness, metadata exposure, secure configuration, and risk reduction. |
+| **Cryptography** | Cryptographic concepts, verification utilities, and security-related implementations. |
+| **Automation** | Scripting, data transformation, repeatable operations, and integration utilities. |
+| **Malware Analysis** | Defensive analysis, reverse-engineering education, and malicious-file investigation resources. |
+| **Cloud Security** | Cloud configuration, identity controls, infrastructure visibility, and defensive assessment. |
+| **Code and Repository Intelligence** | Public repositories, code analysis, dependency research, and development security. |
+| **Security Learning** | Technical documentation, educational laboratories, references, and research methodologies. |
+
+### 10.2 How tools are selected
+
+Every entry in the library is evaluated against a consistent set of criteria, because a long list is only valuable when each item on it deserves its place.
+
+**Purpose.** The tool must solve a clearly defined problem within one of the platform's domains.
+
+**Maintenance.** Preference is given to projects that are actively maintained, or that have stable and well-documented releases. Abandoned tools are reviewed and removed when they are no longer safe or useful.
+
+**Documentation.** A tool should explain what it does, how it works, what data it requires, and what its limitations are.
+
+**Legitimacy.** Tools must be intended for lawful and defensible uses, and their licenses and terms of use must be respected.
+
+**Transparency.** The origin of each resource should be identifiable, and its source should be easy to review.
+
+**Relevance.** Overlapping tools are compared, and the library favors the options that serve users best rather than simply adding more entries.
+
+### 10.3 Important notice on third-party resources
+
+The Qustylex library is a curated collection of third-party tools and resources. Not every tool is developed by Qustylex, hosted by Qustylex, or integrated into the platform. Each resource may have its own installation requirements, dependencies, licenses, operating-system restrictions, and security considerations. Users must read the original documentation and the applicable license before installing or using any tool. Qustylex is not responsible for the behavior of third-party software.
+
+---
+
+## 11. Browsers and OPSEC Tools
+
+Operational security begins with the software used every day, and the browser is the most important part of that software. The Qustylex library includes a dedicated selection of browsers and browser-based privacy tools, chosen to help users reduce tracking, limit fingerprinting, and separate research activity from personal browsing.
+
+This selection covers:
+
+- **Privacy-focused browsers** designed to block trackers and reduce data collection by default.
+- **Browser extensions** for script control, tracker blocking, cookie management, and the separation of sessions into isolated containers.
+- **Hardened configurations** that explain which settings reduce fingerprinting and which trade-offs each one introduces.
+- **Browser-based research tools** for inspecting headers, analyzing the requests a page makes, and identifying the technologies behind a website.
+
+A common mistake in OPSEC is to assume that a single tool provides complete protection. Qustylex encourages a layered approach: a privacy-conscious browser, separate environments for research and personal use, careful management of accounts, and a clear understanding of what each component does and does not protect against.
+
+> No browser, extension, or configuration can guarantee anonymity. The purpose of these resources is to reduce unnecessary exposure and to make informed decisions about risk, not to eliminate it.
+
+---
+
+## 12. Research Methodology
+
+The research process promoted by Qustylex is organized into five stages. Each stage has a specific purpose, and the quality of the final result depends on the discipline applied to every one of them.
 
 | Stage | Purpose |
 | :--- | :--- |
-| **Define** | Establish the objective, scope, and limitations. |
-| **Discover** | Identify appropriate public sources and research methods. |
-| **Verify** | Evaluate reliability and compare available evidence. |
-| **Analyze** | Identify meaningful relationships and possible explanations. |
-| **Document** | Record sources, methodology, findings, and limitations. |
+| **01. Define** | Establish the research question, scope, intended outcome, and limitations. |
+| **02. Discover** | Identify relevant public sources, technical references, and appropriate tools. |
+| **03. Verify** | Evaluate source reliability, compare findings, and confirm timestamps and context. |
+| **04. Analyze** | Correlate verified information and develop possible explanations. |
+| **05. Document** | Preserve the methodology, sources, findings, limitations, and conclusions. |
 
-<br/>
+### 12.1 Define
 
-### Define
+A question without boundaries cannot be answered, because there is no point at which the answer becomes complete. Definition establishes what is being asked, what is excluded, what constraints apply, and what would count as a useful result. For security testing, it also means defining authorized targets and permitted activities before any work begins.
 
-The first stage establishes what is being asked, what is being excluded, and what constraints apply. A question without boundaries cannot be answered, because there is no point at which the answer becomes complete.
+### 12.2 Discover
 
-Definition also means identifying what would count as a valid answer. Without that, research drifts, and conclusions become opinions dressed in the language of findings.
+Discovery identifies which public sources are relevant and which tools are appropriate. The quality of source selection determines the ceiling of the analysis, because no method can compensate for the absence of the right material. The scope of the research may be refined during this stage, and such refinement is a normal part of learning what the question really requires.
 
-<br/>
+### 12.3 Verify
 
-### Discover
+Verification is the stage that separates research from collection. Sources are evaluated for reliability, findings are compared wherever possible, timestamps and context are checked for consistency, and apparent relationships are tested against independent evidence. Confidence is stated explicitly rather than assumed.
 
-The second stage identifies which public sources are relevant, which methods are appropriate, and how coverage can be made reasonably complete. Source selection determines the ceiling of the analysis, because no method can compensate for the absence of the right material.
+### 12.4 Analyze
 
-Discovery is also where the boundaries of the research are tested. It is not unusual for the original question to shift during this stage, and that shift is not a failure. It is a sign that the research is engaging with reality.
+Analysis connects verified material into a coherent picture. It distinguishes direct observations from inferences, documents alternative interpretations, and avoids presenting uncertain conclusions as established facts. A good analysis is not the fastest one. It is the one that can be defended when questioned.
 
-<br/>
+### 12.5 Document
 
-### Verify
+Documentation makes research reviewable, repeatable, and extensible. It records the sources consulted, the methods used, the findings obtained, the limits encountered, and the conclusions drawn. A finding that cannot be traced to its sources is not yet a finding. It is an impression.
 
-The third stage evaluates reliability and compares available evidence. Sources are weighed against each other, inconsistencies are recorded, and confidence levels are stated explicitly.
+### 12.6 The result
 
-Verification is the stage that separates research from collection. It is where claims are tested, where assumptions are exposed, and where the strength of a conclusion is determined by the strength of what supports it.
-
-<br/>
-
-### Analyze
-
-The fourth stage identifies meaningful relationships and possible explanations. It connects verified material into a coherent picture, separating what the evidence supports from what remains an open hypothesis.
-
-Analysis is not about reaching a conclusion quickly. It is about reaching a conclusion that can be defended, and about being honest when the evidence points in more than one direction.
-
-<br/>
-
-### Document
-
-The fifth stage records sources, methodology, findings, and limitations. Documentation is what allows a conclusion to be reviewed by someone else, and it is what allows the researcher to return to their own work and understand it months later.
-
-A finding that cannot be traced back to its sources is not a finding. It is a memory.
-
-<br/>
-
-This framework represents the intended research philosophy of Qustylex, rather than a claim that a dedicated investigation platform is already operational. The process described here is the standard the project aims to meet, not a product that has already been delivered.
-
-<br/>
+A disciplined process produces more than a collection of outputs. It produces an understandable record of how the findings were obtained and why the resulting conclusions are justified. That record is the real product of research, and it is the standard Qustylex is designed to support.
 
 ---
 
-<br/>
+## 13. Security and Privacy
 
-## 05 / Technology & Infrastructure
+Security and privacy are fundamental considerations for a platform that organizes research resources and may be used alongside sensitive investigative material. The platform's approach is built on several principles.
 
-The technologies below represent areas of interest for future development. They do not imply that every listed technology is currently deployed or used in a released Qustylex product.
+**Least exposure.** The platform is designed to avoid unnecessary data collection. Information that is not required to provide a service is not requested, and information that is provided is handled only as far as the service requires.
 
-They are listed because they are relevant to the work the project intends to do, and because familiarity with them is part of the foundation being built.
+**Least privilege.** Users, tools, and automated components should be given only the access necessary for their purpose. Broad access is not a convenience to be granted by default.
 
-<br/>
+**Explicit authorization.** Sensitive operations require appropriate authorization. The inability to complete a required check must never result in unrestricted access.
 
-### Languages
+**Defense in depth.** Security does not depend on a single control. Authentication, authorization, validation, and operational safeguards address different threats and are evaluated according to their responsibilities.
 
-<div align="center">
+**Privacy-conscious research.** The ability to access public information does not automatically justify collecting or publishing it. Researchers are encouraged to minimize the personal data they handle, to distinguish public material from private material, and to weigh the consequences of disclosure before acting.
 
-<a href="https://www.python.org/">
-  <img src="https://img.shields.io/badge/Python-0B090F?style=for-the-badge&logo=python&logoColor=B794F6" alt="Python"/>
-</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-  <img src="https://img.shields.io/badge/JavaScript-0B090F?style=for-the-badge&logo=javascript&logoColor=B794F6" alt="JavaScript"/>
-</a>
-<a href="https://www.typescriptlang.org/">
-  <img src="https://img.shields.io/badge/TypeScript-0B090F?style=for-the-badge&logo=typescript&logoColor=B794F6" alt="TypeScript"/>
-</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-  <img src="https://img.shields.io/badge/HTML5-0B090F?style=for-the-badge&logo=html5&logoColor=B794F6" alt="HTML5"/>
-</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-  <img src="https://img.shields.io/badge/CSS3-0B090F?style=for-the-badge&logo=css3&logoColor=B794F6" alt="CSS3"/>
-</a>
-<a href="https://www.gnu.org/software/bash/">
-  <img src="https://img.shields.io/badge/Bash-0B090F?style=for-the-badge&logo=gnubash&logoColor=B794F6" alt="Bash"/>
-</a>
+**Transparency about limits.** No platform can promise absolute security, universal anonymity, or immunity from every threat. Qustylex documents the protections it provides and describes their limitations, so that users can judge whether the platform fits their needs.
 
-</div>
-
-<br/>
-
-Python is the primary language of interest for research tooling, scripting, and automation. JavaScript and TypeScript are relevant to any interface or web-facing component that may be built. HTML and CSS provide the foundation for presentation, and Bash remains essential for working comfortably in Unix-like environments.
-
-<br/>
-
-### Development Environment
-
-<div align="center">
-
-<a href="https://github.com/">
-  <img src="https://img.shields.io/badge/GitHub-0B090F?style=for-the-badge&logo=github&logoColor=B794F6" alt="GitHub"/>
-</a>
-<a href="https://git-scm.com/">
-  <img src="https://img.shields.io/badge/Git-0B090F?style=for-the-badge&logo=git&logoColor=B794F6" alt="Git"/>
-</a>
-<a href="https://code.visualstudio.com/">
-  <img src="https://img.shields.io/badge/VS_Code-0B090F?style=for-the-badge&logo=visualstudiocode&logoColor=B794F6" alt="Visual Studio Code"/>
-</a>
-<a href="https://www.linux.org/">
-  <img src="https://img.shields.io/badge/Linux-0B090F?style=for-the-badge&logo=linux&logoColor=B794F6" alt="Linux"/>
-</a>
-
-</div>
-
-<br/>
-
-Version control, a reliable editor, and a Unix-like operating system form the basic working environment. These are not exotic choices. They are the standard tools of the trade, and they are listed here because they are the tools the project expects to rely on.
-
-<br/>
-
-### Security Resources
-
-<div align="center">
-
-<a href="https://owasp.org/">
-  <img src="https://img.shields.io/badge/OWASP-0B090F?style=for-the-badge&logo=owasp&logoColor=B794F6" alt="OWASP"/>
-</a>
-<a href="https://www.wireshark.org/">
-  <img src="https://img.shields.io/badge/Wireshark-0B090F?style=for-the-badge&logo=wireshark&logoColor=B794F6" alt="Wireshark"/>
-</a>
-<a href="https://www.kali.org/">
-  <img src="https://img.shields.io/badge/Kali_Linux-0B090F?style=for-the-badge&logo=kalilinux&logoColor=B794F6" alt="Kali Linux"/>
-</a>
-
-</div>
-
-<br/>
-
-These resources represent established references within the security community. OWASP provides guidance on application security, Wireshark supports network analysis, and Kali Linux offers a well-known environment for authorized security work.
-
-<br/>
+**Responsible disclosure.** Security issues affecting Qustylex should be reported privately through the channels described in the Contributing and Reporting section, and should not be disclosed publicly before they have been reviewed and addressed.
 
 ---
 
-<br/>
+## 14. Responsible Use
 
-## 06 / Future Development
+Qustylex exists to support legitimate research, authorized cybersecurity activity, defensive analysis, and technical education. The presence of a tool in the library does not authorize its use against any particular system, account, organization, or person. Technical capability is never the same as authorization.
 
-The following concepts represent possible directions for Qustylex. They are not existing products or currently available services.
+### 14.1 Responsible research includes
 
-Each concept is described in terms of what it might become, not what it is. Nothing listed here should be interpreted as a commitment or a claim.
+- Using security-testing tools only within authorized scopes.
+- Respecting applicable laws, privacy rights, and access restrictions.
+- Handling personal information carefully and in proportion to the purpose.
+- Avoiding unnecessary collection, retention, or disclosure of sensitive data.
+- Verifying findings before presenting them as established facts.
+- Following responsible disclosure procedures when reporting vulnerabilities.
+- Respecting the licenses and terms of use of third-party tools.
+- Applying appropriate safeguards whenever research operations are automated.
 
-<br/>
+### 14.2 Activities that are not supported
 
-<details>
-<summary><strong>Qustylex Intelligence</strong></summary>
+- Unauthorized access to systems, accounts, networks, or devices.
+- Harassment, stalking, doxxing, or any targeted violation of privacy.
+- Bypassing access controls without explicit authorization.
+- Using any resource to facilitate malicious activity, fraud, or harm to others.
+- Presenting unverified allegations as factual conclusions.
+- Distributing sensitive information without an appropriate legal or ethical basis.
 
-<br/>
+### 14.3 A clear distinction
 
-A possible research toolkit focused on organizing publicly available information, managing source references, and structuring investigation workflows.
-
-The idea behind this concept is to create a workspace where sources, notes, and findings can live together in a way that preserves the relationships between them. Instead of treating research as a sequence of disconnected searches, the toolkit would treat it as a body of work that accumulates over time.
-
-Whether this becomes a real project depends on whether the underlying need is strong enough to justify the effort.
-
-</details>
-
-<br/>
-
-<details>
-<summary><strong>Qustylex Recon</strong></summary>
-
-<br/>
-
-A potential collection of utilities for authorized infrastructure research and the analysis of publicly available domain and network information.
-
-This concept focuses on the kind of reconnaissance that is both lawful and useful, aimed at understanding publicly visible infrastructure rather than probing systems that are not meant to be examined. The emphasis is on clarity, documentation, and responsible use.
-
-Like the other concepts listed here, this is a direction rather than a deliverable.
-
-</details>
-
-<br/>
-
-<details>
-<summary><strong>Qustylex Labs</strong></summary>
-
-<br/>
-
-A possible space for documenting technical experiments, security concepts, reproducible research, and educational projects.
-
-The purpose of this concept is to make the process visible, not just the result. Experiments that fail are often more instructive than experiments that succeed, and a space that captures both would serve the project well.
-
-This concept is about transparency as much as it is about technical content.
-
-</details>
-
-<br/>
-
-<details>
-<summary><strong>Qustylex Research</strong></summary>
-
-<br/>
-
-A potential knowledge base for methodologies, technical notes, references, and research documentation.
-
-This concept imagines a structured collection of everything the project has learned, organized in a way that makes it easy to revisit, reference, and build upon. It is the long-term memory of the project, written down so that it does not have to be relearned.
-
-Whether it becomes a formal repository or simply a growing set of documents, the intent is the same.
-
-</details>
-
-<br/>
-
-These names are working concepts. Their scope, implementation, and eventual release will depend on future development. Some of them may never be built. Others may take shapes that are not described here. That is part of what it means to be early.
-
-<br/>
+Before using any tool, the question is not only what it can do, but whether its use is justified, lawful, and proportionate to the objective. This principle applies equally to public-source intelligence, security testing, digital investigation, and automated workflows. Responsibility for how a tool is used rests with the person using it, and Qustylex does not accept responsibility for misuse of the resources it references.
 
 ---
 
-<br/>
+## 15. Intended Audience
 
-## 07 / Development Roadmap
+Qustylex is designed for people who work with digital information and need a more organized approach to their research.
+
+**OSINT researchers** who investigate public sources, examine digital infrastructure, and connect information across different parts of the internet.
+
+**Cybersecurity professionals** who evaluate systems, study vulnerabilities, research infrastructure, and work to improve defensive capability.
+
+**Bug bounty researchers** working within clearly defined program scopes and the rules that govern them.
+
+**Digital investigators** who need to preserve findings, record investigative steps, and distinguish source material from interpretation.
+
+**Privacy-conscious users** who want to understand their digital exposure and improve their everyday security habits.
+
+**Developers and automation engineers** who need reliable references and resources to build scripts, integrations, and workflows.
+
+**Students and independent researchers** learning OSINT, cybersecurity, digital forensics, and research methodology for the first time or deepening an existing practice.
+
+---
+
+## 16. Getting Started
+
+### 16.1 For new users
+
+1. **Open the platform.** Access the Qustylex dashboard at [INSERT PUBLIC URL].
+2. **Choose a starting point.** Begin with the section closest to your objective: Intelligence, Defense, Offense, or Infrastructure.
+3. **Explore a category.** Each category lists its tools with a description of their purpose and scope.
+4. **Read before running.** Review the documentation and license of any tool before installing or using it.
+5. **Stay informed.** Follow NewsVault and the community channels for additions, updates, and important notices.
+
+### 16.2 For researchers
+
+1. Define the research question, scope, and limits before starting.
+2. Use the dashboard to identify the categories and tools relevant to the question.
+3. Use the URL Scanner for the first analysis of any web address encountered during the work.
+4. Record sources, methods, and findings as the work proceeds, so that results can be reviewed and reproduced.
+5. Verify every significant claim against at least one independent source before relying on it.
+
+### 16.3 For students
+
+1. Begin with the Security Learning resources in the library to build a solid foundation.
+2. Practice only in laboratory environments, capture-the-flag challenges, or systems you own.
+3. Read the documentation of every tool before running it, and make sure you understand what it does.
+4. Keep a learning journal. Writing down what you tried, what failed, and why is one of the most effective ways to improve.
+
+### 16.4 For privacy-conscious users
+
+1. Start with the Privacy Stack and the browsers section to understand the main sources of your exposure.
+2. Separate sensitive activity from everyday activity, using different browsers, profiles, or containers.
+3. Review the accounts you use, enable multi-factor authentication where available, and use a password manager.
+4. Revisit your configuration periodically, because the threat landscape and the tools themselves change over time.
+
+---
+
+## 17. Design Principles
+
+The development of Qustylex is guided by the conviction that a mature technical platform should be judged by its reliability, clarity, and usefulness rather than by the number of features it claims to offer.
+
+**Functionality over appearance.** A polished interface matters, but visual quality must be supported by understandable behavior and consistent workflows.
+
+**Modularity over complexity.** Different disciplines have different requirements. A modular structure keeps responsibilities clear and avoids turning every capability into a dependency for every other capability.
+
+**Documentation over assumption.** Behavior should be explained rather than left for users to infer. Clear documentation improves onboarding, integration, maintenance, and review.
+
+**Verification over volume.** Collecting more information does not guarantee better results. Quality depends on source reliability, context, and careful interpretation.
+
+**Controlled automation over unrestricted execution.** Automation should remain observable, scoped, and subject to appropriate permissions.
+
+**Sustainable development over rushed releases.** A release should prioritize consistency, reliability, and clarity rather than the number of announced capabilities.
+
+**Honest communication over inflated claims.** Public descriptions reflect capabilities that have been implemented and made available. Planned functionality is distinguished from released functionality, and limitations are stated clearly.
+
+---
+
+## 18. Roadmap
+
+Qustylex is approaching public release. The current focus is on refining the presentation of the platform, aligning its documentation with implemented behavior, and preparing a coherent and reliable experience for a wider audience.
+
+### Phase 01: Foundation (completed)
+
+- Define the platform's identity, categories, and organizational model.
+- Build the structure of the dashboard across Intelligence, Defense, Offense, Infrastructure, and Resources.
+- Organize the initial core of the 1,200+ tool library.
+
+### Phase 02: Refinement (in progress)
+
+- Review and expand the tool library, with particular attention to maintenance status and documentation quality.
+- Improve category descriptions and the presentation of individual tools.
+- Refine the URL Scanner and the NewsVault experience.
+- Validate permission boundaries and the consistency of the documented behavior.
+
+### Phase 03: Release Preparation (upcoming)
+
+- Complete the public-facing documentation.
+- Verify the availability and behavior of every announced feature.
+- Improve the clarity of installation and usage guidance.
+- Establish clear channels for feedback and responsible reporting.
+
+### Phase 04: Public Availability and Continued Development (planned)
+
+- Open the platform to a wider public audience.
+- Expand resource discovery and categorization based on user feedback.
+- Add new tools and categories as the field evolves.
+- Improve usability, reliability, and maintainability over time.
+
+The roadmap is indicative and does not guarantee specific release dates. A feature is considered complete only when it has been implemented, tested, and made available.
+
+---
+
+## 19. Contributing and Reporting
+
+Community participation helps keep the library accurate, useful, and current. Contributions are welcome in the following forms:
+
+- Reporting broken links or outdated resources.
+- Suggesting well-maintained tools that fit an existing category.
+- Identifying documentation gaps or inconsistencies.
+- Proposing improvements to the dashboard and the user experience.
+- Sharing constructive feedback on clarity and usability.
+
+### 19.1 How to contribute
+
+1. Review the contribution guidelines of the relevant repository.
+2. Open an issue describing the change or suggestion, or discuss it with the community on Discord.
+3. For tool suggestions, include the tool's name, its purpose, its license, and the category where it belongs.
+
+### 19.2 Reporting security issues
+
+Please do not open a public issue for a security vulnerability. Report it privately through the official GitHub profile or the community channels, and allow reasonable time for it to be reviewed and addressed before any public disclosure.
+
+Third-party resources retain their original attribution and licensing requirements. Every contribution must respect those terms.
+
+---
+
+## 20. Frequently Asked Questions
+
+**Is Qustylex a tool or a collection of tools?**
+Both. It is a platform that organizes a curated library of more than 1,200 tools and resources, and it provides its own dashboard, URL Scanner, and NewsVault to help users apply them.
+
+**Are all the tools developed by Qustylex?**
+No. Most entries are independent third-party projects that Qustylex curates and organizes. Each tool remains the work of its authors and is governed by its own license.
+
+**Does Qustylex make me anonymous?**
+No. Anonymity cannot be guaranteed by any single tool or platform. Qustylex provides resources that help reduce unnecessary exposure. See the Security and Privacy section for more detail.
+
+**Can I use these tools against any website or person?**
+No. Many tools in the Offense section are intended only for authorized testing. Explicit permission must be obtained before testing any system you do not own, in accordance with the Responsible Use section.
+
+**How often is the library reviewed?**
+The library is reviewed on an ongoing basis. Outdated or unmaintained resources are updated or removed as the field evolves. [TO BE CONFIRMED]
+
+**Is the platform free?**
+Pricing and access terms will be announced before public release. [TO BE UPDATED]
+
+**Can I suggest a tool?**
+Yes. Open an issue or contact the community on Discord, including the tool's name, purpose, license, and suggested category.
+
+---
+
+## 21. Changelog
+
+**October 23, 2026.** Complete revision of the README. The document was rewritten to describe the full platform structure, including the dashboard categories and their tool counts, the URL Scanner, NewsVault, the 1,200+ tool library, and the browsers and OPSEC resources. Visual presentation was simplified to a static monochrome design.
+
+---
+
+## 22. Community and Contact
+
+Follow the development, explore the resources, and stay connected.
+
+<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/GITHUB-QUSTYLEX-000000?style=for-the-badge&labelColor=000000" alt="GitHub"/></a>
+<a href="https://x.com/Qustylex"><img src="https://img.shields.io/badge/X-QUSTYLEX-000000?style=for-the-badge&labelColor=000000" alt="X"/></a>
+<a href="https://www.youtube.com/@Qustylex"><img src="https://img.shields.io/badge/YOUTUBE-QUSTYLEX-000000?style=for-the-badge&labelColor=000000" alt="YouTube"/></a>
+<a href="https://www.tiktok.com/@qsyzly"><img src="https://img.shields.io/badge/TIKTOK-QSYZLY-000000?style=for-the-badge&labelColor=000000" alt="TikTok"/></a>
+<a href="https://discord.gg/tUFVKTF456"><img src="https://img.shields.io/badge/DISCORD-COMMUNITY-000000?style=for-the-badge&labelColor=000000" alt="Discord"/></a>
+
+---
+
+## 23. License
+
+[TO BE DEFINED] The Qustylex platform code and original content will be published under a license announced before public release. Third-party tools listed in the library are subject to their own licenses, which must be respected.
+
+---
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/PHASE01-FOUNDATION-21152F?style=for-the-badge&labelColor=09070D" alt="Foundation"/>
-<img src="https://img.shields.io/badge/PHASE02-RESEARCH-21152F?style=for-the-badge&labelColor=09070D" alt="Research"/>
-<img src="https://img.shields.io/badge/PHASE_03-DEVELOPMENT-21152F?style=for-the-badge&labelColor=09070D" alt="Development"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=120&color=000000&text=QUSTYLEX&fontSize=44&fontColor=FFFFFF&fontAlignY=50" width="100%" alt="Qustylex footer"/>
 
-</div>
+**DISCOVER WITH PURPOSE. INVESTIGATE WITH PRECISION. BUILD WITH RESPONSIBILITY.**
 
 <br/>
 
-The roadmap below describes the intended progression of the project. It is organized as a sequence of milestones, each with an objective and a current status.
-
-| Milestone | Objective | Status |
-| :--- | :--- | :--- |
-| Project identity | Establish the public identity and documentation | In progress |
-| Research foundation | Study OSINT and security methodologies | Planned |
-| Initial utilities | Explore practical research and automation tools | Planned |
-| Technical documentation | Publish suitable notes and experiments | Planned |
-| Public repositories | Release selected projects where appropriate | Planned |
-| Research ecosystem | Expand the collection of tools and resources | Future direction |
+OSINT · OPSEC · CYBERSECURITY · DIGITAL INTELLIGENCE
 
 <br/>
 
-### Project identity
-
-The first milestone is about establishing who Qustylex is, what it stands for, and how it presents itself. This includes the README you are reading now, the structure of the project's public presence, and the clarity of its stated purpose.
-
-This milestone is in progress because identity is not something that is finished once and then left alone. It evolves as the project evolves, and it should always reflect the current reality rather than a remembered intention.
-
-<br/>
-
-### Research foundation
-
-The second milestone focuses on building a genuine understanding of OSINT and security methodologies. This means studying existing practice, testing assumptions, and developing a personal command of the field rather than a superficial familiarity with it.
-
-A foundation is only valuable if it is solid, and solidity takes time. This milestone will likely remain active for a long while.
-
-<br/>
-
-### Initial utilities
-
-The third milestone is about turning understanding into something practical. Small tools, simple scripts, and focused utilities that solve real problems within the research workflow.
-
-The goal is not to build something impressive. The goal is to build something useful, and then to keep improving it.
-
-<br/>
-
-### Technical documentation
-
-The fourth milestone is about writing things down. Notes, experiments, methodologies, and explanations that can be shared, reviewed, and reused.
-
-Documentation is often the difference between a project that grows and a project that stalls, because it is what allows knowledge to survive the passage of time.
-
-<br/>
-
-### Public repositories
-
-The fifth milestone is about releasing selected work publicly, where appropriate and where it makes sense to do so. Not everything should be public, but what is public should be worth reading.
-
-This milestone is deliberately placed after the others, because there is no point in publishing work that has not yet been done properly.
-
-<br/>
-
-### Research ecosystem
-
-The final milestone is the broadest. It describes the gradual expansion of the project into a wider collection of tools, resources, and documentation that together form something larger than any individual piece.
-
-This is a direction rather than a destination, and it may take years to approach.
-
-<br/>
-
-The roadmap is indicative and may evolve as the project develops. Timelines are not specified because they would be guesses, and guesses presented as plans are a form of dishonesty.
-
-<br/>
-
----
-
-<br/>
-
-## 08 / Responsible Research
-
-Qustylex supports the responsible and lawful exploration of cybersecurity and open-source intelligence.
-
-This section describes the boundaries within which the project operates. They are not optional, and they are not negotiable.
-
-<br/>
-
-- Research must respect applicable laws, privacy, and access restrictions.
-- Security testing must take place only in owned or explicitly authorized environments.
-- Private information must not be accessed without appropriate authorization.
-- Personal information should be handled carefully and collected only when necessary.
-- Potential vulnerabilities should be reported through appropriate channels.
-- Findings must be documented honestly, with their limitations clearly stated.
-
-<br/>
-
-### Why these boundaries matter
-
-The techniques used in OSINT and security research are neutral in themselves, but their application is not. The same method that reveals a misconfigured server can be used to invade someone's privacy. The same tool that helps defend a network can be used to attack one.
-
-Because of this, the project treats responsible practice not as an afterthought but as a design constraint. Every tool, every workflow, and every documented method should be built with these boundaries already in mind.
-
-<br/>
-
-### The role of authorization
-
-Authorization is not a formality. It is the line that separates research from intrusion. When testing is performed, it is performed only on systems that are owned by the researcher or explicitly authorized by their owners. There is no other category.
-
-This is stated plainly because it is important, and because it is easy to blur in practice.
-
-<br/>
-
-### The handling of personal information
-
-Public availability does not automatically mean appropriateness of use. Personal information should be handled with care, collected only when there is a genuine reason to do so, and never retained longer than necessary.
-
-The project takes the position that restraint is a form of competence, and that the ability to collect something is not the same as the justification for collecting it.
-
-<br/>
-
-### Honest documentation
-
-Findings must be documented honestly, with their limitations clearly stated. This includes documenting what was not found, what could not be verified, and what remains uncertain.
-
-A report that overstates its conclusions is worse than no report at all, because it introduces error into a process that depends on trust.
-
-<br/>
-
-The objective is to develop knowledge, explore defensive applications, and improve understanding of the digital environment. Everything else is secondary to that.
-
-<br/>
-
----
-
-<br/>
-
-## 09 / Current Status
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/QUSTYLEX-EARLYSTAGE-21152F?style=for-the-badge&labelColor=09070D" alt="Early stage"/>
-<img src="https://img.shields.io/badge/PUBLICRELEASE-NOT_AVAILABLE-21152F?style=for-the-badge&labelColor=09070D" alt="No public release yet"/>
-
-</div>
-
-<br/>
-
-Qustylex is currently in its early development stage.
-
-The project is establishing its identity, exploring its research direction, and preparing the foundation for future work in OSINT and cybersecurity.
-
-No operational commercial service or complete investigative platform is being claimed at this stage.
-
-This repository is the public starting point for the project.
-
-<br/>
-
-### What exists today
-
-What exists today is a foundation. A name, a set of principles, a defined direction, and a public presence that describes what the project intends to become. That is not nothing, but it is also not a product.
-
-The honest description of the current state is that Qustylex is a project in the earliest phase of its life. It has more questions than answers, more plans than results, and more work ahead than behind.
-
-That is expected. It is also the only honest way to describe where things stand.
-
-<br/>
-
-### What does not exist yet
-
-There is no released toolkit. There is no investigative platform. There is no commercial service. There is no finished product of any kind.
-
-Any statement suggesting otherwise would be inaccurate, and the project is committed to avoiding that kind of statement.
-
-<br/>
-
-### What comes next
-
-The next steps are the ones described in the roadmap: establishing identity, building a research foundation, developing initial utilities, documenting the work, and releasing selected projects where appropriate.
-
-Each of these steps will take time, and none of them will be rushed for the sake of appearing further along than the project actually is.
-
-<br/>
-
----
-
-<br/>
-
-## 10 / Connect with Qustylex
-
-<div align="center">
-
-**FOLLOW THE PROJECT**
-
-<br/><br/>
-
-<a href="https://github.com/Qustylex">
-  <img src="https://img.shields.io/badge/GitHub-QUSTYLEX-110B19?style=for-the-badge&logo=github&logoColor=B794F6" alt="GitHub"/>
-</a>
-
-<a href="https://x.com/Qustylex">
-  <img src="https://img.shields.io/badge/X-QUSTYLEX-110B19?style=for-the-badge&logo=x&logoColor=B794F6" alt="X"/>
-</a>
-
-<a href="https://www.tiktok.com/@qsyzly">
-  <img src="https://img.shields.io/badge/TikTok-QSYZLY-110B19?style=for-the-badge&logo=tiktok&logoColor=B794F6" alt="TikTok"/>
-</a>
-
-<a href="https://www.youtube.com/@Qustylex">
-  <img src="https://img.shields.io/badge/YouTube-QUSTYLEX-110B19?style=for-the-badge&logo=youtube&logoColor=B794F6" alt="YouTube"/>
-</a>
-
-<a href="https://discord.gg/tUFVKTF456">
-  <img src="https://img.shields.io/badge/Discord-JOINTHECOMMUNITY-110B19?style=for-the-badge&logo=discord&logoColor=B794F6" alt="Discord"/>
-</a>
-
-<br/><br/>
-
-**Official channels and community links.**
-
-</div>
-
-<br/>
-
-These are the official channels associated with the project. They are the places where updates will appear as the project develops, and where anyone interested in following along can do so.
-
-There is no expectation of an audience, and no pressure to grow one. The channels exist so that the work can be shared when there is something worth sharing.
-
-<br/>
-
----
-
-<br/>
-
-## Closing Note
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=170&section=footer&color=0:8B5CF6,45:38145B,75:13091F,100:050505" width="100%" alt="Qustylex purple footer"/>
-
-<br/>
-
-**Q U S T Y L E X**
-
-<br/>
-
-*Research the unknown. Understand the evidence.*
-
-<br/>
-
-**OSINT / CYBERSECURITY / RESEARCH**
-
-<br/>
-
-Independent project · Currently in development
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-<div align="center">
-
-<sub>
-
-Every word in this document is intended to be accurate to the current state of the project.
-
-If something here is no longer true, it will be corrected.
-
-If something here is not yet true, it will be marked as a plan rather than a fact.
-
-That is the standard Qustylex holds itself to.
-
-</sub>
+Last updated: October 23, 2026
 
 </div>
