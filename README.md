@@ -1,619 +1,627 @@
-<div align="center">
+<p align="center">
+  <img src="banner.svg" alt="Qustylex: Security and OSINT Research Workspace" width="100%"/>
+</p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=200&color=000000&text=QUSTYLEX&fontSize=76&fontColor=FFFFFF&fontAlignY=50&desc=INTELLIGENCE%20%C2%B7%20SECURITY%20%C2%B7%20INVESTIGATION&descSize=16&descColor=FFFFFF&descAlignY=72" width="100%" alt="Qustylex"/>
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Version 1.0"/>
+  <img src="https://img.shields.io/badge/platform-web-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Web platform"/>
+  <img src="https://img.shields.io/badge/sign--in-GitHub%20OAuth-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="GitHub OAuth"/>
+  <img src="https://img.shields.io/badge/directory-2%2C481%20entries-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="2,481 directory entries"/>
+</p>
 
-<br/>
+<h1 align="center">Qustylex</h1>
 
-**THE DIGITAL WORLD IS VAST. YOUR RESEARCH SHOULD NOT BE FRAGMENTED.**
+<p align="center"><strong>A research workspace for clear, responsible security work.</strong></p>
 
-<br/>
-
-An integrated platform for open-source intelligence, operational security, cybersecurity research, and digital investigation, built around a curated library of more than 1,200 selected tools.
-
-<br/>
-
-<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/RESOURCE_LIBRARY-1200%2B_TOOLS-000000?style=for-the-badge&labelColor=000000" alt="1200+ tools"/></a>
-<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/FOCUS-OSINT_%2F_OPSEC-000000?style=for-the-badge&labelColor=000000" alt="OSINT and OPSEC"/></a>
-<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/STATUS-APPROACHING_RELEASE-000000?style=for-the-badge&labelColor=000000" alt="Approaching release"/></a>
-
-<br/><br/>
-
-**Last updated: October 23, 2026**
-
-<br/>
-
-<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/GITHUB-QUSTYLEX-000000?style=flat-square&labelColor=000000" alt="GitHub"/></a>
-<a href="https://x.com/Qustylex"><img src="https://img.shields.io/badge/X-QUSTYLEX-000000?style=flat-square&labelColor=000000" alt="X"/></a>
-<a href="https://www.youtube.com/@Qustylex"><img src="https://img.shields.io/badge/YOUTUBE-QUSTYLEX-000000?style=flat-square&labelColor=000000" alt="YouTube"/></a>
-<a href="https://www.tiktok.com/@qsyzly"><img src="https://img.shields.io/badge/TIKTOK-QSYZLY-000000?style=flat-square&labelColor=000000" alt="TikTok"/></a>
-<a href="https://discord.gg/tUFVKTF456"><img src="https://img.shields.io/badge/DISCORD-COMMUNITY-000000?style=flat-square&labelColor=000000" alt="Discord"/></a>
-
-</div>
+<p align="center">
+  <a href="https://qustylex.vercel.app">Live site</a> ·
+  <a href="https://qustylex.vercel.app/docs">Documentation</a> ·
+  <a href="https://qustylex.vercel.app/console">Console</a>
+</p>
 
 ---
 
 ## Table of Contents
 
-- [01. Introduction](#01-introduction)
-- [02. Vision](#02-vision)
-- [03. Platform at a Glance](#03-platform-at-a-glance)
-- [04. Intelligence](#04-intelligence)
-- [05. Defense](#05-defense)
-- [06. Offense](#06-offense)
-- [07. Infrastructure](#07-infrastructure)
-- [08. Resources](#08-resources)
-- [09. URL Scanner](#09-url-scanner)
-- [10. The 1,200+ Tool Library](#10-the-1200-tool-library)
-- [11. Browsers and OPSEC Tools](#11-browsers-and-opsec-tools)
-- [12. Research Methodology](#12-research-methodology)
-- [13. Security and Privacy](#13-security-and-privacy)
-- [14. Responsible Use](#14-responsible-use)
-- [15. Intended Audience](#15-intended-audience)
-- [16. Getting Started](#16-getting-started)
-- [17. Design Principles](#17-design-principles)
-- [18. Roadmap](#18-roadmap)
-- [19. Contributing and Reporting](#19-contributing-and-reporting)
-- [20. Frequently Asked Questions](#20-frequently-asked-questions)
-- [21. Changelog](#21-changelog)
-- [22. Community and Contact](#22-community-and-contact)
-- [23. License](#23-license)
+1. [Overview](#1-overview)
+2. [Key Capabilities](#2-key-capabilities)
+3. [Who Qustylex Is For](#3-who-qustylex-is-for)
+4. [Responsible Use](#4-responsible-use)
+5. [Getting Started](#5-getting-started)
+6. [The Console](#6-the-console)
+7. [URL Scanner](#7-url-scanner)
+8. [Network Intel](#8-network-intel)
+9. [OSINT Arsenal and Security Directory](#9-osint-arsenal-and-security-directory)
+10. [Authentication and Sessions](#10-authentication-and-sessions)
+11. [API Reference](#11-api-reference)
+12. [Architecture](#12-architecture)
+13. [Security Model](#13-security-model)
+14. [Data Handling and Privacy](#14-data-handling-and-privacy)
+15. [Known Limitations and Open Items](#15-known-limitations-and-open-items)
+16. [Frequently Asked Questions](#16-frequently-asked-questions)
+17. [Glossary](#17-glossary)
+18. [Contributing and Reporting Security Issues](#18-contributing-and-reporting-security-issues)
+19. [License](#19-license)
+20. [Changelog](#20-changelog)
 
 ---
 
-## 01. Introduction
+## 1. Overview
 
-Intelligence is not about collecting more. It is about understanding better.
+Qustylex is a web-based workspace for security and open-source intelligence (OSINT) research. It brings three things into one place:
 
-The modern digital environment is an interconnected landscape of public information, online services, network infrastructure, software repositories, security signals, technical documentation, and continuously changing digital assets. Every day, an enormous quantity of information becomes available through publicly accessible sources. Yet access to information alone does not guarantee understanding. Valuable findings are frequently scattered across unrelated services, documented inconsistently, or separated from the context required to interpret them correctly.
+- **A focused web assessment workflow**, the URL Scanner, which runs selected checks against a public web target that the user is authorized to assess.
+- **Public-data lookups**, the Network Intel module, which queries public DNS, RDAP (the modern successor to WHOIS), IP-intelligence, and certificate-transparency sources.
+- **A curated directory** of 2,481 security and OSINT resource entries, organized by category, so that researchers can find established external tools and references without searching across dozens of sites.
 
-Qustylex exists to make this process more structured. It is an independent intelligence and cybersecurity platform built around the disciplines of Open-Source Intelligence (OSINT), Operational Security (OPSEC), cybersecurity research, digital investigation, and research automation. It brings together a curated collection of more than 1,200 tools and resources and presents them through a dashboard organized by purpose, so that a researcher can move from a question to a suitable resource without losing time or context.
+Qustylex is a discovery and analysis aid. It does not replace professional judgment, and it does not install, host, or execute the third-party tools listed in its directory. Each directory entry is a link with a description. Opening an entry takes the user to the provider's own site, where installation, accounts, pricing, and terms are controlled by that provider.
 
-The platform is designed for the way research actually happens. A question about a website may involve its domain history, its certificates, its public infrastructure, and the reliability of the sources describing it. A question about personal privacy may involve browsers, extensions, operating systems, and the discipline of separating one activity from another. Qustylex is built to support these chains of work, not isolated searches.
+The current release is **Qustylex v1.0**. Its documentation was last updated in October 2026.
 
-Its underlying philosophy is straightforward. Research should be methodical. Evidence should remain traceable. Automation should be controlled. Technical capability should always be accompanied by a clear understanding of its limits. Qustylex does not promise to replace expertise, and it does not claim to make anyone invisible or invulnerable. It promises a better environment in which expertise can work more effectively.
+### Design goals
 
-The objective is to reduce unnecessary fragmentation without sacrificing flexibility, transparency, or technical depth.
-
-<div align="center">
-
-**One ecosystem. Multiple disciplines. A clearer approach to intelligence.**
-
-</div>
-
----
-
-## 02. Vision
-
-### From fragmented resources to structured intelligence
-
-Digital research rarely happens in one place. An investigator might begin with a domain name, move to its DNS records, examine certificate transparency data, look through publicly available repositories, compare infrastructure relationships, review security advisories, and finally assemble a report from findings collected across several independent tools. Each individual step may be simple. The difficulty lies in maintaining continuity between them.
-
-Information becomes hard to manage when outputs are disconnected, sources are forgotten, the context of an investigation is lost, and repetitive operations must be rebuilt by hand each time. Qustylex is designed around the idea that the research process deserves the same attention as the tools used to carry it out.
-
-### The pillars of the platform
-
-The platform is built on several complementary concepts that correspond to the stages of real research work.
-
-**Discovery.** Identifying relevant tools, public sources, and technical resources for a specific objective, so that less time is spent searching and more time is spent analyzing.
-
-**Organization.** Presenting resources in categories that reflect their purpose, so that the relationship between a tool and its use is always visible.
-
-**Analysis.** Supporting the examination of findings, the identification of relationships, and the distinction between evidence and assumption.
-
-**Automation.** Making repeatable operations easier to standardize and review, without surrendering judgment to the process.
-
-**Documentation.** Preserving the methodology, the context, and the limitations behind each result, so that conclusions can be checked and reproduced.
-
-### The principles behind the platform
-
-| Principle | What it means |
+| Goal | What it means in practice |
 | :--- | :--- |
-| **Clarity** | Every resource is organized in a way that makes its purpose and relevance understandable. |
-| **Traceability** | Findings remain connected to their supporting sources wherever practical. |
-| **Consistency** | Repeatable tasks follow defined procedures rather than relying entirely on memory and improvisation. |
-| **Modularity** | Different disciplines coexist without becoming unnecessarily dependent on one another. |
-| **Control** | Access, visibility, and automated operations remain subject to appropriate permissions. |
-| **Responsibility** | Technical capabilities are used within legitimate, authorized, and privacy-conscious boundaries. |
-
-The vision is not to replace every existing security tool, and it is not to force every researcher into a single methodology. It is to create an environment in which useful tools, structured investigations, and repeatable processes can work together with clarity and discipline.
+| **Clarity** | Every module states what it checks, what data source it uses, and what its results do not prove. |
+| **Traceability** | Results are presented with their inputs and sources so that they can be reviewed and reproduced. |
+| **Restraint** | Active checks are limited in scope, and the documentation asks users to stay within authorization. |
+| **Honesty about limits** | Automated output is treated as a lead to verify, not as a verdict. |
 
 ---
 
-## 03. Platform at a Glance
+## 2. Key Capabilities
 
-The Qustylex dashboard organizes the platform into five sections, each subdivided into categories. The number beside each category indicates how many tools it currently contains. The sections are designed to be read in sequence, from the observation of public information to the defense and hardening of one's own digital environment.
+| Capability | Summary | Requires sign-in |
+| :--- | :--- | :---: |
+| **URL Scanner** | Selected HTTP, DNS, technology, security-header, WAF, and public-surface checks for an authorized web target. | Yes |
+| **Network Intel** | IP geolocation, reverse DNS, RDAP registration data, certificate-transparency hosts, and subdomain enumeration from public logs. | Yes |
+| **OSINT Arsenal** | A searchable directory of 2,481 external OSINT and security resource entries. | Yes |
+| **Security Tools** | A directory of external references for defensive assessment, forensics, cryptography, and privacy. | Yes |
+| **Documentation** | Searchable guides, API reference, architecture notes, FAQ, and glossary. | No |
 
-| Section | Category | Tools |
-| :--- | :--- | ---: |
-| **Intelligence** | OSINT | 25 |
-| | Social Media | 11 |
-| | Breach Data | 7 |
-| | Geolocation | 8 |
-| | Dark Web | 5 |
-| **Defense** | Privacy Stack | 20 |
-| | Cryptography | 8 |
-| | Forensics | 10 |
-| **Offense** | Web Security | 14 |
-| | Exploitation | 10 |
-| | All Security Tools | 26 |
-| **Infrastructure** | Operating Systems | 16 |
-| **Resources** | NewsVault | Curated feed |
-| **Utilities** | URL Scanner | Analysis tool |
-
-Each category groups tools that share a common purpose. A tool may be relevant to more than one category, and the dashboard reflects this by allowing users to explore the library from multiple angles. The sections that follow describe each area in detail.
+Access to the console and to the tool API is described in [Authentication and Sessions](#10-authentication-and-sessions). Note the open item in [Section 15](#15-known-limitations-and-open-items) about how the tool API enforces sessions.
 
 ---
 
-## 04. Intelligence
+## 3. Who Qustylex Is For
 
-The Intelligence section is dedicated to gathering, verifying, and correlating information from publicly accessible sources. It is the starting point for most open-source investigations, and it is the largest area of the dashboard in terms of tools.
+Qustylex is designed for people who work with public digital information in a lawful and accountable way:
 
-### 04.1 OSINT (25 tools)
+- **Owners and administrators** who want to review the public exposure of systems they control, such as domains, certificates, DNS records, and web security headers.
+- **Security professionals** working under a written engagement, with a defined scope, time window, and rules of engagement.
+- **Bug bounty researchers** who work strictly within the scope and rules of a published program.
+- **OSINT researchers and digital investigators** who need a structured starting point and who respect the privacy of the people and organizations they research.
+- **Students and learners** who want to understand how public data sources, web headers, and certificates work, using systems they own or environments built for practice.
 
-This is the core category of the platform. It contains utilities and resources for public-source discovery, search-engine research, the correlation of identities across services, domain and infrastructure research, and the verification of online sources. Its tools help move from a single starting point, such as a name, a domain, an account handle, or an image, toward a broader and better-documented understanding of the subject.
-
-Typical uses include mapping the public footprint of an organization, verifying whether a claim is supported by independent sources, locating archived versions of web pages, and building a structured record of what was found and where it was found.
-
-### 04.2 Social Media (11 tools)
-
-This category gathers resources for analyzing publicly available social media content and profiles. Its focus is on public information, on research conducted within the rules of each platform, and on the methods used to verify accounts, posts, and media circulating online.
-
-Social media research is especially sensitive, because the same information that helps verify a claim can also expose private individuals. For this reason, the tools in this category should be used with proportion and restraint, limited to public material that serves a legitimate purpose.
-
-### 04.3 Breach Data (7 tools)
-
-This category contains resources for checking whether an email address, username, or domain appears in publicly reported data breaches. Their primary value is defensive. They allow individuals and organizations to audit their own exposure, understand the consequences of an incident, and decide what actions to take, such as rotating credentials or enabling additional protections.
-
-Breach data should be handled with the utmost care. Results should be used to protect the owner of the information, not to expose or exploit it.
-
-### 04.4 Geolocation (8 tools)
-
-Geolocation tools help verify where an image, video, or other media was captured, using publicly available information such as metadata, landmarks, shadows, vegetation, signage, and mapping services. It is a discipline that rewards patience and rigor, and that punishes assumption.
-
-Geolocation results should always be cross-checked against independent evidence before being presented as fact. A plausible location is not the same as a confirmed one, and the difference matters.
-
-### 04.5 Dark Web (5 tools)
-
-This category contains resources for researching publicly documented dark web services, threat reports, and the monitoring of publicly listed indicators. Its purpose is security analysis and threat intelligence, including the study of how illicit ecosystems are described in public reporting.
-
-Access to illegal services, or to content that is itself illegal, is outside the scope of this platform and is not supported.
+Qustylex is not intended for anyone who wants to target systems, accounts, or individuals without permission. See the next section.
 
 ---
 
-## 05. Defense
+## 4. Responsible Use
 
-The Defense section is focused on protecting systems, data, and identities. It gathers the tools needed to reduce exposure, secure communications, and examine incidents after they occur.
+Qustylex aggregates and organizes public information, and it runs a limited set of active checks. Public availability is not permission. Before using any feature, users should be able to answer three questions:
 
-### 05.1 Privacy Stack (20 tools)
+1. **Am I authorized?** Do I own this asset, or do I have explicit written permission from its owner to assess it?
+2. **Is my scope defined?** Do I know exactly which domains, hosts, or IP ranges, which checks, and which time window are covered?
+3. **Is my purpose legitimate and proportionate?** Am I collecting only what I need, and am I prepared to handle what I find responsibly?
 
-The largest defensive category on the platform. It contains privacy-focused applications and utilities that help reduce the digital footprint of individuals and organizations. Its tools address browser fingerprinting, tracker and script blocking, metadata removal from files and images, secure messaging, encrypted storage, private DNS resolution, and the management of accounts and credentials.
+### Principles
 
-The Privacy Stack is built on a principle that is often overlooked: a privacy tool is only as useful as the user's understanding of what it protects against and what it does not. Each entry is intended to be used with that understanding in mind.
+- **Authorization first.** Run active checks only against assets you own or have explicit written permission to test.
+- **Low impact.** Avoid repeated or high-volume requests. Stop if a service becomes unstable or if the owner asks you to stop.
+- **Protect people and data.** Do not use the platform or its directory to stalk, dox, harass, intimidate, or discriminate against anyone, and do not use it to access accounts or private data.
+- **Disclose responsibly.** If you find a vulnerability in a system you do not own, report it privately to its owner through the published security contact, share only the minimum evidence needed, and do not continue testing beyond your authorization.
 
-### 05.2 Cryptography (8 tools)
+### What Qustylex does not do
 
-This category contains utilities for encryption, hashing, key management, and the verification of cryptographic operations. Its resources range from practical tools, such as those for encrypting files and verifying checksums, to references that explain how the underlying primitives work and why they are trusted.
+- It does not bypass authentication, authorization, or access controls on third-party systems.
+- It does not provide a full penetration test, and it does not certify that a system is secure.
+- It does not guarantee that any directory link is current, safe, or endorsed.
 
-Cryptographic tools are powerful and easy to misuse. Users are encouraged to understand the threat model a tool addresses before relying on it, and to avoid implementing cryptography themselves for production purposes.
-
-### 05.3 Forensics (10 tools)
-
-Forensics tools support the examination of digital artifacts. Their functions include file analysis, hash verification, metadata extraction, timeline reconstruction, and the preservation of evidence in a form that can be reviewed.
-
-Investigation requires discipline in its own right. The forensic tools in this category are designed to support methodical work, in which every observation is recorded, every interpretation is labeled, and every limitation is stated. Where formal evidentiary requirements apply, proper preservation and chain-of-custody procedures must be followed in addition to any technical steps.
-
----
-
-## 06. Offense
-
-The Offense section contains tools used in authorized security testing, vulnerability research, and security education. Every resource in this section is intended for use within an explicitly authorized scope, such as systems the user owns, laboratory environments, capture-the-flag competitions, or programs that expressly permit testing.
-
-Offensive knowledge is part of defensive capability. A defender who understands how a weakness is exploited is better placed to recognize it, prioritize it, and fix it. For that reason, Qustylex includes these resources, and for the same reason, their use is governed by strict boundaries described throughout this document.
-
-### 06.1 Web Security (14 tools)
-
-Utilities for assessing the security of web applications. Their functions include analyzing HTTP traffic, identifying common misconfigurations, examining authentication and session handling, reviewing security headers, and understanding the classes of vulnerability described in widely used references such as the OWASP Top Ten.
-
-These tools support both professional testing and learning. They should be used only against systems for which written authorization exists.
-
-### 06.2 Exploitation (10 tools)
-
-Resources for understanding how vulnerabilities are exploited. Their primary use is the validation of findings, the testing of defenses, and the development of a deeper understanding of security weaknesses in controlled environments.
-
-Use in this category is restricted to authorized testing and educational settings. Understanding an exploit is a legitimate part of defending against it. Deploying an exploit against a system without permission is not permitted, and is not supported by this platform under any circumstances.
-
-### 06.3 All Security Tools (26 tools)
-
-A broader collection of general-purpose security utilities that span several disciplines, including network inspection, vulnerability assessment, service enumeration within authorized scope, and security automation. It is a practical entry point for users who want to explore a wide range of tools before narrowing their focus to a specific discipline.
+Laws, contracts, and provider terms vary by jurisdiction. This documentation is not legal advice.
 
 ---
 
-## 07. Infrastructure
+## 5. Getting Started
 
-The Infrastructure section focuses on the environments in which research and security work are carried out. Its single category, Operating Systems, contains sixteen distributions and environments selected for security research, privacy, digital forensics, penetration testing within authorized scope, and privacy-conscious daily use.
+### 5.1 Sign in
 
-### 07.1 Operating Systems (16 tools)
+1. Open [qustylex.vercel.app](https://qustylex.vercel.app).
+2. Choose **Continue with GitHub**.
+3. Review the requested permissions on GitHub's consent screen. The current implementation requests the `read:user` scope only, which reads public profile information. It does not request repository or email access.
+4. After authorization, you are redirected to the console at `/console`.
 
-Each entry describes the intended purpose of the system, its typical use cases, its hardware and software requirements, and the considerations that should be weighed before installation. Some systems are designed for investigation and analysis, others for hardening and daily privacy, and others for education and laboratory work.
+### 5.2 Run your first check
 
-Choosing an operating system is a security decision in its own right. The Infrastructure section exists so that this choice can be made deliberately, based on the objective of the user, rather than by default or by popularity alone.
+1. Open **URL Scanner** from the console sidebar.
+2. Enter only a domain or URL that you own or are explicitly authorized to assess.
+3. Start the scan and wait for the results.
+4. Review each result in context. Treat every finding as a lead to verify, not as a confirmed vulnerability.
+5. Document what you verified, how you verified it, and what remains uncertain.
 
----
+### 5.3 Explore the directory
 
-## 08. Resources
-
-### 08.1 NewsVault
-
-NewsVault is the platform's dedicated space for information, updates, and reference material. It collects relevant news, security advisories, tool updates, and educational content, organized so that users can stay current without monitoring dozens of sources manually.
-
-Content in NewsVault is curated with the same standard applied to the tool library. Relevance, accuracy, and context matter more than volume. Each item is intended to answer a practical question: what changed, why it matters, and what, if anything, a researcher should do about it.
-
----
-
-## 09. URL Scanner
-
-The URL Scanner is a utility for analyzing web addresses before they are visited or shared. It helps identify suspicious links, examine the structure of a URL, and gather publicly available context about its destination.
-
-Typical uses include:
-
-- Checking a link received by email, messaging, or social media before opening it.
-- Understanding where a shortened or redirected address actually leads.
-- Collecting initial context about a domain during an investigation.
-- Supporting defensive analysis of phishing and fraud campaigns.
-- Documenting the characteristics of a suspicious link for reporting purposes.
-
-A scanner result is an indicator, not a verdict. A flagged address should be examined further, and a clean result does not guarantee that a destination is safe. The URL Scanner is most effective when its output is combined with the user's own judgment and with the other categories of the platform.
+1. Open **OSINT Arsenal** or **Security Tools**.
+2. Filter or browse by category.
+3. Open an entry to read its description, then visit the provider's site to review its license, documentation, privacy practices, and current status before use.
 
 ---
 
-## 10. The 1,200+ Tool Library
+## 6. The Console
 
-Beyond the dashboard categories, Qustylex maintains a broader library of more than 1,200 selected tools and resources spanning OSINT, OPSEC, cybersecurity, reconnaissance, digital forensics, privacy, network analysis, and related technical disciplines.
+The console at `/console` is the operating area of the platform. Its sidebar groups modules by purpose.
 
-Finding the right resource can take as long as performing the research itself. Useful tools are distributed across independent repositories, specialist websites, documentation portals, and community forums. Many require considerable familiarity with the field before their value can be judged. The Qustylex library brings this landscape into one structured and navigable experience, so that the search for a tool becomes a matter of minutes rather than days.
+| Group | Modules | Purpose |
+| :--- | :--- | :--- |
+| **Overview** | Home, Dashboard, Explore, Search | Daily entry point, discovery, and search across the directory. |
+| **My Work** | Overview, Pulse, Favorites, Marked, Recent | Personal shortcuts and local workspace views. |
+| **Scanner** | URL Scanner | Web assessment for authorized targets. |
+| **Intelligence** | OSINT, Network | Public-data lookups and directory categories for open-source research. |
+| **Defense** | Privacy, Cryptography, Forensics | Directory references for defensive and privacy work. |
+| **Offense** | Web Security, Exploitation, All Tools | Directory references for authorized testing and security education. |
 
-### 10.1 Domains covered
+The sidebar's grouping reflects where a resource is typically used. A directory entry in the Offense group is a reference for authorized testing and learning. It is not a license to test any system.
 
-| Domain | Scope |
+### Keyboard shortcuts
+
+The documentation site supports the following shortcuts:
+
+| Key | Action |
 | :--- | :--- |
-| **OSINT** | Public-source discovery, information gathering, source verification, and correlation. |
-| **OPSEC** | Operational awareness, exposure reduction, compartmentalization, and privacy practice. |
-| **Reconnaissance** | Authorized asset discovery, domain research, and attack-surface assessment. |
-| **DNS and Domains** | DNS records, domain registration data, subdomains, and related infrastructure. |
-| **Certificate Intelligence** | Certificate Transparency research and publicly observable certificate relationships. |
-| **Network Analysis** | Protocol inspection, traffic analysis, network diagnostics, and troubleshooting. |
-| **Web Security** | Application security, authorized testing, secure configuration, and vulnerability research. |
-| **Threat Intelligence** | Public threat reports, indicators of compromise, advisories, and contextual analysis. |
-| **Digital Forensics** | Artifact examination, forensic utilities, and investigative methodology. |
-| **Privacy and Anonymity** | Privacy awareness, metadata exposure, secure configuration, and risk reduction. |
-| **Cryptography** | Cryptographic concepts, verification utilities, and security-related implementations. |
-| **Automation** | Scripting, data transformation, repeatable operations, and integration utilities. |
-| **Malware Analysis** | Defensive analysis, reverse-engineering education, and malicious-file investigation resources. |
-| **Cloud Security** | Cloud configuration, identity controls, infrastructure visibility, and defensive assessment. |
-| **Code and Repository Intelligence** | Public repositories, code analysis, dependency research, and development security. |
-| **Security Learning** | Technical documentation, educational laboratories, references, and research methodologies. |
-
-### 10.2 How tools are selected
-
-Every entry in the library is evaluated against a consistent set of criteria, because a long list is only valuable when each item on it deserves its place.
-
-**Purpose.** The tool must solve a clearly defined problem within one of the platform's domains.
-
-**Maintenance.** Preference is given to projects that are actively maintained, or that have stable and well-documented releases. Abandoned tools are reviewed and removed when they are no longer safe or useful.
-
-**Documentation.** A tool should explain what it does, how it works, what data it requires, and what its limitations are.
-
-**Legitimacy.** Tools must be intended for lawful and defensible uses, and their licenses and terms of use must be respected.
-
-**Transparency.** The origin of each resource should be identifiable, and its source should be easy to review.
-
-**Relevance.** Overlapping tools are compared, and the library favors the options that serve users best rather than simply adding more entries.
-
-### 10.3 Important notice on third-party resources
-
-The Qustylex library is a curated collection of third-party tools and resources. Not every tool is developed by Qustylex, hosted by Qustylex, or integrated into the platform. Each resource may have its own installation requirements, dependencies, licenses, operating-system restrictions, and security considerations. Users must read the original documentation and the applicable license before installing or using any tool. Qustylex is not responsible for the behavior of third-party software.
+| `⌘K` / `/` | Open search |
+| `?` | Show shortcuts |
+| `J` / `K` | Next or previous section |
+| `G` then `H` | Go to top |
+| `Esc` | Close a modal |
 
 ---
 
-## 11. Browsers and OPSEC Tools
+## 7. URL Scanner
 
-Operational security begins with the software used every day, and the browser is the most important part of that software. The Qustylex library includes a dedicated selection of browsers and browser-based privacy tools, chosen to help users reduce tracking, limit fingerprinting, and separate research activity from personal browsing.
+The URL Scanner is a web-assessment workflow for a single public URL or domain. It combines selected checks, runs them through the Qustylex tool API, and presents structured results.
 
-This selection covers:
+**The scanner is not a penetration test.** It reports selected signals. A missing finding does not mean a site is secure, and a reported signal does not mean a site is vulnerable.
 
-- **Privacy-focused browsers** designed to block trackers and reduce data collection by default.
-- **Browser extensions** for script control, tracker blocking, cookie management, and the separation of sessions into isolated containers.
-- **Hardened configurations** that explain which settings reduce fingerprinting and which trade-offs each one introduces.
-- **Browser-based research tools** for inspecting headers, analyzing the requests a page makes, and identifying the technologies behind a website.
+### 7.1 Checks
 
-A common mistake in OPSEC is to assume that a single tool provides complete protection. Qustylex encourages a layered approach: a privacy-conscious browser, separate environments for research and personal use, careful management of accounts, and a clear understanding of what each component does and does not protect against.
+| Check | What it does | How to read the result |
+| :--- | :--- | :--- |
+| **Security headers** | Checks for HTTP response headers such as HSTS, Content-Security-Policy, X-Frame-Options, and Referrer-Policy. | A missing header is a configuration observation. Assess it against the application's actual needs. |
+| **WAF detection** | Looks for fingerprints of common web application firewalls and CDN layers. | A detection indicates a likely provider, not a guarantee of protection. |
+| **Technology stack** | Identifies likely CMS, framework, and server software from public responses. | Version guesses can be wrong. Verify before relying on them. |
+| **Public web surface** | Requests a bounded set of common paths and reviews response metadata. | A response is evidence to review. It is not proof of exposure or exploitability. |
+| **Input-handling signals** | Runs a limited check for selected database error patterns. | This is not a comprehensive injection test. Use it only inside an explicit authorization. |
+| **Client-visible strings** | Searches fetched public content for selected token-like patterns. | Matches can be false positives. If a value looks like a real credential, do not use it. Notify the owner. |
 
-> No browser, extension, or configuration can guarantee anonymity. The purpose of these resources is to reduce unnecessary exposure and to make informed decisions about risk, not to eliminate it.
+### 7.2 Active versus passive checks
+
+Several checks send requests to the target. Treat the scanner as **active testing**. This is why the documentation requires written authorization before use, and why the scope should be confirmed before every scan.
+
+### 7.3 Interpreting results
+
+1. **Confirm scope.** Make sure the target is inside your authorization.
+2. **Read each result in context.** Consider whether the signal applies to this system, this configuration, and this purpose.
+3. **Verify manually and safely.** Reproduce the signal with the least intrusive method that works, within scope.
+4. **Document.** Record the check, the result, your verification steps, and your conclusion, including what you could not confirm.
+5. **Report.** If the finding is real and affects a system you do not own, send it to the owner through their published disclosure channel.
+
+### 7.4 Limits
+
+- Results depend on the target's current response, the network path, and the availability of upstream services.
+- Some checks may be blocked, rate-limited, or altered by the target's own defenses.
+- Results are a snapshot at the time of the scan.
 
 ---
 
-## 12. Research Methodology
+## 8. Network Intel
 
-The research process promoted by Qustylex is organized into five stages. Each stage has a specific purpose, and the quality of the final result depends on the discipline applied to every one of them.
+Network Intel provides lookups for IP addresses, domains, and infrastructure. It aggregates public data so that common reconnaissance questions can be answered from a single interface.
 
-| Stage | Purpose |
+| Module | Description | Typical question |
+| :--- | :--- | :--- |
+| **IP geolocation** | City, country, ISP, ASN, and timezone for an IPv4 or IPv6 address. | Which network and region does this address belong to? |
+| **Reverse DNS** | Hostnames that point back to an IP address. | What names are associated with this address? |
+| **WHOIS and RDAP** | Registration data for IP ranges and domains, where published. | Who registered this domain or block, and when? |
+| **Certificate transparency** | Hostnames listed in public certificate-transparency logs (for example, via crt.sh). | What hosts have certificates issued for this domain? |
+| **Subdomain enumeration** | Subdomains discovered from public certificate and DNS data. | What names exist under this domain in public records? |
+
+### 8.1 Interpreting Network Intel data
+
+- **Registration data can be redacted.** Privacy services and regional rules often hide personal details. An absent field is not an error.
+- **Certificate transparency shows issued certificates, not live services.** A hostname may be retired, unused, or never resolved.
+- **Geolocation is approximate.** IP-based location can reflect the provider's network, not the user's physical location.
+- **Providers have their own terms and rate limits.** Results can be delayed or incomplete.
+
+---
+
+## 9. OSINT Arsenal and Security Directory
+
+The directory contains **2,481 curated entries** across OSINT, network research, privacy, defensive security, forensics, and related topics. Its entries are independently maintained projects and services, described and linked by Qustylex.
+
+### 9.1 What a directory entry is
+
+A directory entry contains a name, a short description, a category, and a link to the provider. Entries are references, not software bundled with Qustylex.
+
+- Qustylex does not install these tools.
+- Qustylex does not run them in a hosted environment for users.
+- Qustylex does not control their availability, pricing, accounts, or privacy practices.
+
+### 9.2 Categories
+
+Categories include the following areas. Names are indicative and may change as the directory is updated.
+
+| Area | Typical topics |
 | :--- | :--- |
-| **01. Define** | Establish the research question, scope, intended outcome, and limitations. |
-| **02. Discover** | Identify relevant public sources, technical references, and appropriate tools. |
-| **03. Verify** | Evaluate source reliability, compare findings, and confirm timestamps and context. |
-| **04. Analyze** | Correlate verified information and develop possible explanations. |
-| **05. Document** | Preserve the methodology, sources, findings, limitations, and conclusions. |
+| **Username and identity research** | Public account discovery and cross-platform username checks. |
+| **Email research** | Public email-related lookups and verification references. |
+| **Breach data** | Services that report whether credentials or identifiers appear in known public breach collections. |
+| **Geolocation** | Map, satellite, and imagery references, and tools for verifying where media was captured. |
+| **Dark web research** | Public search and threat-intelligence references for studying illicit ecosystems. |
+| **Network and domain research** | DNS, certificate, IP, and infrastructure references. |
+| **Forensics** | Analysis, carving, memory, and firmware reference tools. |
+| **Cryptography** | Encryption, hashing, and verification references. |
+| **Privacy and operational security** | Browsers, privacy utilities, and exposure-reduction practices. |
+| **Security tools** | General defensive, assessment, and learning references. |
 
-### 12.1 Define
+### 9.3 Using the directory responsibly
 
-A question without boundaries cannot be answered, because there is no point at which the answer becomes complete. Definition establishes what is being asked, what is excluded, what constraints apply, and what would count as a useful result. For security testing, it also means defining authorized targets and permitted activities before any work begins.
-
-### 12.2 Discover
-
-Discovery identifies which public sources are relevant and which tools are appropriate. The quality of source selection determines the ceiling of the analysis, because no method can compensate for the absence of the right material. The scope of the research may be refined during this stage, and such refinement is a normal part of learning what the question really requires.
-
-### 12.3 Verify
-
-Verification is the stage that separates research from collection. Sources are evaluated for reliability, findings are compared wherever possible, timestamps and context are checked for consistency, and apparent relationships are tested against independent evidence. Confidence is stated explicitly rather than assumed.
-
-### 12.4 Analyze
-
-Analysis connects verified material into a coherent picture. It distinguishes direct observations from inferences, documents alternative interpretations, and avoids presenting uncertain conclusions as established facts. A good analysis is not the fastest one. It is the one that can be defended when questioned.
-
-### 12.5 Document
-
-Documentation makes research reviewable, repeatable, and extensible. It records the sources consulted, the methods used, the findings obtained, the limits encountered, and the conclusions drawn. A finding that cannot be traced to its sources is not yet a finding. It is an impression.
-
-### 12.6 The result
-
-A disciplined process produces more than a collection of outputs. It produces an understandable record of how the findings were obtained and why the resulting conclusions are justified. That record is the real product of research, and it is the standard Qustylex is designed to support.
+- **Check the provider before use.** Review the license, documentation, privacy notice, and current maintenance status.
+- **Do not assume a link is current or safe.** Projects can be archived, renamed, or compromised. Verify the source before installing anything.
+- **Respect the purpose.** A tool's existence in a directory does not authorize its use against any system or person.
+- **Breach and dark web resources** carry particular risk. Handle their outputs as sensitive, and do not expose personal data beyond what your authorized purpose requires.
 
 ---
 
-## 13. Security and Privacy
+## 10. Authentication and Sessions
 
-Security and privacy are fundamental considerations for a platform that organizes research resources and may be used alongside sensitive investigative material. The platform's approach is built on several principles.
+Qustylex uses **GitHub OAuth 2.0** as its identity provider. Users do not create a separate Qustylex password.
 
-**Least exposure.** The platform is designed to avoid unnecessary data collection. Information that is not required to provide a service is not requested, and information that is provided is handled only as far as the service requires.
+### 10.1 Sign-in flow
 
-**Least privilege.** Users, tools, and automated components should be given only the access necessary for their purpose. Broad access is not a convenience to be granted by default.
+1. **Initiation.** The user selects *Continue with GitHub*. The server creates a random `state` value, stores it in a cookie, and redirects the user to GitHub.
+2. **Authorization.** The user approves access on GitHub. GitHub redirects back with a temporary `code` and the original `state`.
+3. **Verification.** The server checks that the returned `state` matches the stored value and that the issuer matches GitHub's OAuth server. A mismatch stops the flow.
+4. **Token exchange.** The server exchanges the `code` for a short-lived access token and uses it to retrieve the user's profile. The token is not stored in the session and is not returned to the browser.
+5. **Session creation.** The profile fields needed by the console are placed in a signed cookie.
 
-**Explicit authorization.** Sensitive operations require appropriate authorization. The inability to complete a required check must never result in unrestricted access.
+### 10.2 Scopes
 
-**Defense in depth.** Security does not depend on a single control. Authentication, authorization, validation, and operational safeguards address different threats and are evaluated according to their responsibilities.
+| Scope | Purpose | Data read |
+| :--- | :--- | :--- |
+| `read:user` | Read public profile information. | Username, ID, display name, avatar, bio, public repository count, follower and following counts, profile URL. |
 
-**Privacy-conscious research.** The ability to access public information does not automatically justify collecting or publishing it. Researchers are encouraged to minimize the personal data they handle, to distinguish public material from private material, and to weigh the consequences of disclosure before acting.
+### 10.3 Session cookie
 
-**Transparency about limits.** No platform can promise absolute security, universal anonymity, or immunity from every threat. Qustylex documents the protections it provides and describes their limitations, so that users can judge whether the platform fits their needs.
+| Property | Value |
+| :--- | :--- |
+| Name | `qstx_user` |
+| Format | `<base64(JSON payload)>.<hex(HMAC-SHA256)>` |
+| Flags | `HttpOnly; Secure; SameSite=Lax` |
+| Maximum age | 7 days (604,800 seconds) |
 
-**Responsible disclosure.** Security issues affecting Qustylex should be reported privately through the channels described in the Contributing and Reporting section, and should not be disclosed publicly before they have been reviewed and addressed.
+The payload is **base64-encoded and signed**, not encrypted. Signing protects integrity: a modified cookie is rejected. It does not hide the contents. Do not assume that the cookie is confidential.
 
----
+### 10.4 Signing out and revoking access
 
-## 14. Responsible Use
-
-Qustylex exists to support legitimate research, authorized cybersecurity activity, defensive analysis, and technical education. The presence of a tool in the library does not authorize its use against any particular system, account, organization, or person. Technical capability is never the same as authorization.
-
-### 14.1 Responsible research includes
-
-- Using security-testing tools only within authorized scopes.
-- Respecting applicable laws, privacy rights, and access restrictions.
-- Handling personal information carefully and in proportion to the purpose.
-- Avoiding unnecessary collection, retention, or disclosure of sensitive data.
-- Verifying findings before presenting them as established facts.
-- Following responsible disclosure procedures when reporting vulnerabilities.
-- Respecting the licenses and terms of use of third-party tools.
-- Applying appropriate safeguards whenever research operations are automated.
-
-### 14.2 Activities that are not supported
-
-- Unauthorized access to systems, accounts, networks, or devices.
-- Harassment, stalking, doxxing, or any targeted violation of privacy.
-- Bypassing access controls without explicit authorization.
-- Using any resource to facilitate malicious activity, fraud, or harm to others.
-- Presenting unverified allegations as factual conclusions.
-- Distributing sensitive information without an appropriate legal or ethical basis.
-
-### 14.3 A clear distinction
-
-Before using any tool, the question is not only what it can do, but whether its use is justified, lawful, and proportionate to the objective. This principle applies equally to public-source intelligence, security testing, digital investigation, and automated workflows. Responsibility for how a tool is used rests with the person using it, and Qustylex does not accept responsibility for misuse of the resources it references.
+- **Signing out** clears the browser cookie.
+- **Revoking access** is done in GitHub under *Settings → Applications → Authorized OAuth Apps*. This is the provider-side control that removes the grant. Local sign-out alone does not revoke the GitHub authorization.
 
 ---
 
-## 15. Intended Audience
+## 11. API Reference
 
-Qustylex is designed for people who work with digital information and need a more organized approach to their research.
+The Qustylex API is a JSON HTTP API served from the same domain as the website.
 
-**OSINT researchers** who investigate public sources, examine digital infrastructure, and connect information across different parts of the internet.
+**Base URL:** `https://qustylex.vercel.app/api`
 
-**Cybersecurity professionals** who evaluate systems, study vulnerabilities, research infrastructure, and work to improve defensive capability.
+### 11.1 Authentication
 
-**Bug bounty researchers** working within clearly defined program scopes and the rules that govern them.
+The console and the tool endpoints are designed to require a valid, unexpired session cookie. Requests without a valid session receive `401 Unauthorized`. Browser requests on the same origin send the cookie automatically. Command-line requests must include the cookie explicitly.
 
-**Digital investigators** who need to preserve findings, record investigative steps, and distinguish source material from interpretation.
+See [Known Limitations](#15-known-limitations-and-open-items) for an open item about how `/api/tools` enforces this requirement.
 
-**Privacy-conscious users** who want to understand their digital exposure and improve their everyday security habits.
+### 11.2 `GET /api/auth/me`
 
-**Developers and automation engineers** who need reliable references and resources to build scripts, integrations, and workflows.
+Returns the profile of the authenticated user. The client uses this endpoint to confirm that a session is still valid.
 
-**Students and independent researchers** learning OSINT, cybersecurity, digital forensics, and research methodology for the first time or deepening an existing practice.
+```http
+GET /api/auth/me
+Cookie: qstx_user=<signed value>
+```
 
----
+```javascript
+const response = await fetch('/api/auth/me', {
+  credentials: 'same-origin',
+  cache: 'no-store',
+  headers: { Accept: 'application/json' }
+});
+```
 
-## 16. Getting Started
+| Status | Meaning |
+| :--- | :--- |
+| `200 OK` | Valid session. The response contains the user object. |
+| `401 Unauthorized` | No session, invalid signature, or expired session. |
+| `500 Internal Server Error` | Server misconfiguration or internal error. |
 
-### 16.1 For new users
+### 11.3 `GET /api/tools`
 
-1. **Open the platform.** Access the Qustylex dashboard at [INSERT PUBLIC URL].
-2. **Choose a starting point.** Begin with the section closest to your objective: Intelligence, Defense, Offense, or Infrastructure.
-3. **Explore a category.** Each category lists its tools with a description of their purpose and scope.
-4. **Read before running.** Review the documentation and license of any tool before installing or using it.
-5. **Stay informed.** Follow NewsVault and the community channels for additions, updates, and important notices.
+Routes a lookup or assessment request to a supported tool.
 
-### 16.2 For researchers
+| Parameter | Required | Type | Description |
+| :--- | :---: | :--- | :--- |
+| `type` | Yes | string | The route identifier, for example `domain-full`, `dns-all`, or `whois`. |
+| `q` | Yes | string | The target: a domain, IP address, or URL. |
+| `record` | No | string | Optional for routes that accept a DNS record type, such as `dns-propagation`. |
 
-1. Define the research question, scope, and limits before starting.
-2. Use the dashboard to identify the categories and tools relevant to the question.
-3. Use the URL Scanner for the first analysis of any web address encountered during the work.
-4. Record sources, methods, and findings as the work proceeds, so that results can be reviewed and reproduced.
-5. Verify every significant claim against at least one independent source before relying on it.
+**Example: DNS lookup** (requires a session cookie)
 
-### 16.3 For students
+```bash
+curl -X GET "https://qustylex.vercel.app/api/tools?type=dns-all&q=example.com" \
+  -H "Accept: application/json" \
+  -H "Cookie: qstx_user=<your signed session value>"
+```
 
-1. Begin with the Security Learning resources in the library to build a solid foundation.
-2. Practice only in laboratory environments, capture-the-flag challenges, or systems you own.
-3. Read the documentation of every tool before running it, and make sure you understand what it does.
-4. Keep a learning journal. Writing down what you tried, what failed, and why is one of the most effective ways to improve.
+**Example: domain assessment** (requires a session cookie, and an authorized target)
 
-### 16.4 For privacy-conscious users
+```bash
+curl -X GET "https://qustylex.vercel.app/api/tools?type=domain-full&q=example.com" \
+  -H "Accept: application/json" \
+  -H "Cookie: qstx_user=<your signed session value>"
+```
 
-1. Start with the Privacy Stack and the browsers section to understand the main sources of your exposure.
-2. Separate sensitive activity from everyday activity, using different browsers, profiles, or containers.
-3. Review the accounts you use, enable multi-factor authentication where available, and use a password manager.
-4. Revisit your configuration periodically, because the threat landscape and the tools themselves change over time.
+Use only domains you own or are explicitly authorized to assess. Route names and parameters may change between releases; check the current documentation before integrating.
 
----
+### 11.4 Error responses
 
-## 17. Design Principles
+Every error response uses the same JSON shape:
 
-The development of Qustylex is guided by the conviction that a mature technical platform should be judged by its reliability, clarity, and usefulness rather than by the number of features it claims to offer.
+```json
+{
+  "ok": false,
+  "error": "bad_request",
+  "message": "Missing required parameter: q"
+}
+```
 
-**Functionality over appearance.** A polished interface matters, but visual quality must be supported by understandable behavior and consistent workflows.
+| HTTP status | Error code | Cause |
+| :---: | :--- | :--- |
+| `400` | `bad_request` | A required parameter (`type` or `q`) is missing or malformed. |
+| `401` | `unauthorized` | No valid, unexpired session. |
+| `403` | `forbidden` | The target is a private or local address that the handler blocks. |
+| `404` | `not_found` | The route identifier is unknown. |
+| `405` | `method_not_allowed` | The request method is not `GET`. |
+| `500` | `server_error` | An upstream provider or the tool handler failed. |
 
-**Modularity over complexity.** Different disciplines have different requirements. A modular structure keeps responsibilities clear and avoids turning every capability into a dependency for every other capability.
+### 11.5 Rate limits
 
-**Documentation over assumption.** Behavior should be explained rather than left for users to infer. Clear documentation improves onboarding, integration, maintenance, and review.
-
-**Verification over volume.** Collecting more information does not guarantee better results. Quality depends on source reliability, context, and careful interpretation.
-
-**Controlled automation over unrestricted execution.** Automation should remain observable, scoped, and subject to appropriate permissions.
-
-**Sustainable development over rushed releases.** A release should prioritize consistency, reliability, and clarity rather than the number of announced capabilities.
-
-**Honest communication over inflated claims.** Public descriptions reflect capabilities that have been implemented and made available. Planned functionality is distinguished from released functionality, and limitations are stated clearly.
-
----
-
-## 18. Roadmap
-
-Qustylex is approaching public release. The current focus is on refining the presentation of the platform, aligning its documentation with implemented behavior, and preparing a coherent and reliable experience for a wider audience.
-
-### Phase 01: Foundation (completed)
-
-- Define the platform's identity, categories, and organizational model.
-- Build the structure of the dashboard across Intelligence, Defense, Offense, Infrastructure, and Resources.
-- Organize the initial core of the 1,200+ tool library.
-
-### Phase 02: Refinement (in progress)
-
-- Review and expand the tool library, with particular attention to maintenance status and documentation quality.
-- Improve category descriptions and the presentation of individual tools.
-- Refine the URL Scanner and the NewsVault experience.
-- Validate permission boundaries and the consistency of the documented behavior.
-
-### Phase 03: Release Preparation (upcoming)
-
-- Complete the public-facing documentation.
-- Verify the availability and behavior of every announced feature.
-- Improve the clarity of installation and usage guidance.
-- Establish clear channels for feedback and responsible reporting.
-
-### Phase 04: Public Availability and Continued Development (planned)
-
-- Open the platform to a wider public audience.
-- Expand resource discovery and categorization based on user feedback.
-- Add new tools and categories as the field evolves.
-- Improve usability, reliability, and maintainability over time.
-
-The roadmap is indicative and does not guarantee specific release dates. A feature is considered complete only when it has been implemented, tested, and made available.
+The current tool handler does not implement an application-level rate limiter. Hosting or upstream provider limits may still apply. Do not design integrations that depend on a specific limit, and keep request volume low.
 
 ---
 
-## 19. Contributing and Reporting
+## 12. Architecture
 
-Community participation helps keep the library accurate, useful, and current. Contributions are welcome in the following forms:
+Qustylex is a static web application with serverless API routes. Authentication and tool routes run as serverless functions on the hosting platform. Live results depend on external data providers.
 
-- Reporting broken links or outdated resources.
-- Suggesting well-maintained tools that fit an existing category.
-- Identifying documentation gaps or inconsistencies.
-- Proposing improvements to the dashboard and the user experience.
-- Sharing constructive feedback on clarity and usability.
+```mermaid
+flowchart LR
+    U[User browser] -->|Static pages| S[Static site: Console, Docs]
+    U -->|OAuth and session| A[/api/auth/*/]
+    U -->|JSON requests| T[/api/tools/]
+    A -->|Code exchange| G[(GitHub OAuth)]
+    T -->|DNS, RDAP, HTTP, certificate data| P[(Public data providers)]
+    T -->|Selected HTTP checks| X[(Authorized public target)]
+```
 
-### 19.1 How to contribute
+### 12.1 Components
 
-1. Review the contribution guidelines of the relevant repository.
-2. Open an issue describing the change or suggestion, or discuss it with the community on Discord.
-3. For tool suggestions, include the tool's name, its purpose, its license, and the category where it belongs.
+| Component | Responsibility |
+| :--- | :--- |
+| **Static site** | Landing page, documentation, and console user interface. |
+| **Auth routes** | GitHub OAuth initiation, callback, session creation, and the `/api/auth/me` profile check. |
+| **Tool routes** | Route dispatch for the URL Scanner and Network Intel lookups. |
+| **Directory** | Static catalog of 2,481 external entries with descriptions and links. |
+| **Upstream providers** | Public DNS, RDAP, IP-intelligence, certificate-transparency, and web sources used by live lookups. |
 
-### 19.2 Reporting security issues
+### 12.2 Design principles
 
-Please do not open a public issue for a security vulnerability. Report it privately through the official GitHub profile or the community channels, and allow reasonable time for it to be reviewed and addressed before any public disclosure.
-
-Third-party resources retain their original attribution and licensing requirements. Every contribution must respect those terms.
+- **Separation of concerns.** Static content, authentication, and tool execution are separate.
+- **Small server surface.** Serverless routes handle only what the features require.
+- **Explicit scope.** Active checks are described as active, and their use is governed by the authorization rules in this document.
 
 ---
 
-## 20. Frequently Asked Questions
+## 13. Security Model
 
-**Is Qustylex a tool or a collection of tools?**
-Both. It is a platform that organizes a curated library of more than 1,200 tools and resources, and it provides its own dashboard, URL Scanner, and NewsVault to help users apply them.
+This section describes the intended controls and the threats they address. It is not a security certification. Verify the deployed service independently before making security claims about it.
 
-**Are all the tools developed by Qustylex?**
-No. Most entries are independent third-party projects that Qustylex curates and organizes. Each tool remains the work of its authors and is governed by its own license.
+### 13.1 Controls
+
+| Control | Purpose |
+| :--- | :--- |
+| **OAuth state validation** | Prevents cross-site request forgery during sign-in. |
+| **Issuer check** | Confirms the authorization response came from GitHub's OAuth server. |
+| **Signed session cookie** | Detects tampering with the session payload. |
+| **Seven-day session limit** | Limits how long a stolen or forgotten session remains valid. |
+| **`HttpOnly` cookie** | Prevents page scripts from reading the cookie value directly. |
+| **`Secure` cookie** | Restricts the cookie to HTTPS connections. |
+| **`SameSite=Lax`** | Reduces cross-site request forgery risk while allowing normal navigation. |
+| **Private-address blocking** | The tool handler rejects private and local addresses, as reported in the error table. |
+
+### 13.2 Threats in scope
+
+- Credential theft through cross-site scripting or cross-site request forgery.
+- Session hijacking through cookie theft.
+- Unauthorized data access through broken authorization.
+- Injection attacks, including SQL, command, and template injection.
+- Abuse through excessive requests or resource exhaustion.
+- Attacks on the OAuth flow, such as code interception or mix-up.
+
+### 13.3 Threats out of scope
+
+- Physical attacks on users or their devices.
+- Compromise of GitHub or of the user's own endpoint.
+- Legal compulsion of infrastructure providers.
+
+### 13.4 Limits of this model
+
+- A signed cookie is not encryption. Its contents are readable by anyone who has it.
+- `HttpOnly` does not protect against malicious scripts running on the same origin.
+- Application security depends on the deployed configuration, hosting platform, and upstream providers.
+
+---
+
+## 14. Data Handling and Privacy
+
+The repository and documentation describe some data handling. Hosting logs, backups, provider retention, and production settings are controlled by the deployment and by upstream providers. The operator should publish a deployment-specific privacy notice that covers these details.
+
+| Data | Purpose | Retention |
+| :--- | :--- | :--- |
+| **GitHub profile fields** | Identify and display the signed-in user. | Stored in the session cookie for up to seven days. |
+| **GitHub access token** | Used once to retrieve the profile. | Discarded after the profile lookup. Not stored in the cookie or returned to the browser. |
+| **Lookup and scan inputs** | Sent to the tool API and, depending on the check, to public data providers or the target. | Not established by this repository. Verify the deployed service and each provider's policy. |
+
+### 14.1 Your rights
+
+To ask what data is associated with your account, to request correction, or to request deletion, contact the service operator through its published privacy channel. Completion times and outcomes depend on the deployed service and on applicable law.
+
+Profile fields come from GitHub. To change them, update your GitHub profile and sign in again.
+
+### 14.2 What you should not submit
+
+- Credentials, secrets, or API keys belonging to anyone.
+- Personal data about third parties unless you have a lawful, specific purpose.
+- Confidential information of an employer or client without authorization.
+
+---
+
+## 15. Known Limitations and Open Items
+
+This section lists issues the maintainers should resolve or verify before a wider release. Readers should weigh these items when relying on the platform.
+
+| # | Item | Current state | Action |
+| :---: | :--- | :--- | :--- |
+| 1 | **Session enforcement on `/api/tools`** | The documentation says the route requires a valid session. The handler description in the same documentation says it does not verify one. | Verify in the deployed code. Enforce the session check server-side and test it with an unauthenticated request. |
+| 2 | **Rate limiting** | No application-level rate limiter is documented for the tool handler. | Add a per-session or per-address limit on active routes. |
+| 3 | **Retention and logging** | Retention for hosting logs, upstream providers, and backups is not documented. | Publish a deployment-specific privacy notice. |
+| 4 | **Account deletion** | No self-service deletion workflow is documented. | Document the request process, or add a self-service option. |
+| 5 | **Directory accuracy** | Entries are external links that change over time. | Schedule periodic link and status reviews, and mark stale entries. |
+| 6 | **License** | Not yet defined for the platform code or its original content. | Choose and publish a license. Third-party entries keep their own licenses. |
+| 7 | **Public security contact** | Not specified in this document. | Publish a security contact and disclosure policy. |
+
+Items 1 and 2 concern how active routes are protected. They should be resolved before any claim that the platform enforces authorization or limits abuse.
+
+---
+
+## 16. Frequently Asked Questions
+
+**Is Qustylex legal to use?**
+No tool can make every use lawful. Laws, contracts, provider terms, and privacy rights vary. Use active checks only on systems you own or are explicitly authorized to assess, and consult qualified legal advice when needed.
+
+**Can I scan any website?**
+No. Scan only assets you own or that are covered by written authorization. A website being reachable on the internet is not permission to test it.
+
+**Does the URL Scanner exploit vulnerabilities?**
+No. It reports selected signals. A signal is not proof that a vulnerability is exploitable, and the scanner does not provide an exploitation workflow.
+
+**Are the scanner's checks passive?**
+No. Several checks send requests to the target. Treat scanning as active testing.
+
+**Is a scanner result a confirmed finding?**
+No. Results can be incomplete, outdated, or false positives. Verify findings within your authorization.
+
+**How many tools are in the directory?**
+The directory contains 2,481 entries. These are links and descriptions for external resources, not applications that Qustylex runs.
+
+**Can I run the directory's tools inside Qustylex?**
+No. Each provider controls installation, accounts, pricing, availability, and terms.
+
+**Are all directory links verified and working?**
+No. Projects change, move, or disappear. Review each provider before relying on it.
 
 **Does Qustylex make me anonymous?**
-No. Anonymity cannot be guaranteed by any single tool or platform. Qustylex provides resources that help reduce unnecessary exposure. See the Security and Privacy section for more detail.
+No. No platform or tool can guarantee anonymity. Qustylex is a research aid, not an anonymity service.
 
-**Can I use these tools against any website or person?**
-No. Many tools in the Offense section are intended only for authorized testing. Explicit permission must be obtained before testing any system you do not own, in accordance with the Responsible Use section.
+**Why does Qustylex use GitHub sign-in?**
+GitHub is the only identity provider the platform uses. This avoids storing passwords for Qustylex accounts. The scope requested is listed in [Section 10.2](#102-scopes).
 
-**How often is the library reviewed?**
-The library is reviewed on an ongoing basis. Outdated or unmaintained resources are updated or removed as the field evolves. [TO BE CONFIRMED]
+**Does Qustylex store my GitHub access token?**
+No. The token is used once to read your profile and is then discarded.
 
-**Is the platform free?**
-Pricing and access terms will be announced before public release. [TO BE UPDATED]
+**Is my session cookie encrypted?**
+No. It is base64-encoded and signed with HMAC-SHA256. The signature protects integrity. It does not conceal the contents.
 
-**Can I suggest a tool?**
-Yes. Open an issue or contact the community on Discord, including the tool's name, purpose, license, and suggested category.
+**How long does a session last?**
+Up to seven days. Signing out clears the browser cookie. To revoke the GitHub grant, use GitHub's authorized applications settings.
 
----
-
-## 21. Changelog
-
-**October 23, 2026.** Complete revision of the README. The document was rewritten to describe the full platform structure, including the dashboard categories and their tool counts, the URL Scanner, NewsVault, the 1,200+ tool library, and the browsers and OPSEC resources. Visual presentation was simplified to a static monochrome design.
+**How do I report a security issue?**
+Use the security contact published by the operator. Do not post vulnerability details publicly, and do not include real credentials or personal data in your report.
 
 ---
 
-## 22. Community and Contact
+## 17. Glossary
 
-Follow the development, explore the resources, and stay connected.
-
-<a href="https://github.com/Qustylex"><img src="https://img.shields.io/badge/GITHUB-QUSTYLEX-000000?style=for-the-badge&labelColor=000000" alt="GitHub"/></a>
-<a href="https://x.com/Qustylex"><img src="https://img.shields.io/badge/X-QUSTYLEX-000000?style=for-the-badge&labelColor=000000" alt="X"/></a>
-<a href="https://www.youtube.com/@Qustylex"><img src="https://img.shields.io/badge/YOUTUBE-QUSTYLEX-000000?style=for-the-badge&labelColor=000000" alt="YouTube"/></a>
-<a href="https://www.tiktok.com/@qsyzly"><img src="https://img.shields.io/badge/TIKTOK-QSYZLY-000000?style=for-the-badge&labelColor=000000" alt="TikTok"/></a>
-<a href="https://discord.gg/tUFVKTF456"><img src="https://img.shields.io/badge/DISCORD-COMMUNITY-000000?style=for-the-badge&labelColor=000000" alt="Discord"/></a>
+| Term | Definition |
+| :--- | :--- |
+| **OSINT** | Open-Source Intelligence: information gathered from publicly available sources. |
+| **OPSEC** | Operational Security: practices that limit unnecessary exposure of information. |
+| **RDAP** | Registration Data Access Protocol: a modern, structured successor to WHOIS. |
+| **WHOIS** | A protocol and service for querying domain and address registration records. |
+| **DNS** | Domain Name System: translates domain names into addresses and publishes other records. |
+| **Certificate transparency** | Public, append-only logs of issued TLS certificates. |
+| **WAF** | Web Application Firewall: a filter that inspects web traffic for malicious patterns. |
+| **HSTS** | HTTP Strict Transport Security: tells browsers to use HTTPS only for a domain. |
+| **CSP** | Content-Security-Policy: restricts which resources a page may load and run. |
+| **OAuth 2.0** | An authorization framework that lets a service access a user's data at a provider without a password. |
+| **HMAC** | Hash-based Message Authentication Code: a signature that proves a message was not altered. |
+| **Authorized scope** | The explicitly approved set of assets, checks, and time window for a test or assessment. |
 
 ---
 
-## 23. License
+## 18. Contributing and Reporting Security Issues
 
-[TO BE DEFINED] The Qustylex platform code and original content will be published under a license announced before public release. Third-party tools listed in the library are subject to their own licenses, which must be respected.
+Community input helps keep the directory accurate and the documentation clear.
+
+### 18.1 Ways to contribute
+
+- Report broken, outdated, or misdescribed directory entries.
+- Suggest well-maintained tools that fit an existing category, with the name, purpose, license, and suggested category.
+- Point out documentation gaps or inconsistencies.
+- Share feedback on clarity and usability.
+
+### 18.2 Reporting a security vulnerability
+
+Do not open a public issue for a security vulnerability. Report it privately through the security contact published by the operator, and allow reasonable time for review before any public disclosure.
+
+> **Maintainers:** replace this placeholder with the published security contact and disclosure policy before release.
 
 ---
 
-<div align="center">
+## 19. License
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=120&color=000000&text=QUSTYLEX&fontSize=44&fontColor=FFFFFF&fontAlignY=50" width="100%" alt="Qustylex footer"/>
+The Qustylex platform code and original content do not yet have a published license.
 
-**DISCOVER WITH PURPOSE. INVESTIGATE WITH PRECISION. BUILD WITH RESPONSIBILITY.**
+> **Maintainers:** choose and publish a license before public release, and state it here.
 
-<br/>
+Third-party entries in the directory keep their own licenses and terms. Respect them before use or redistribution.
 
-OSINT · OPSEC · CYBERSECURITY · DIGITAL INTELLIGENCE
+---
 
-<br/>
+## 20. Changelog
 
-Last updated: October 23, 2026
+### v1.0 (October 2026)
 
-</div>
+- GitHub OAuth sign-in with a signed, seven-day session cookie.
+- URL Scanner with selected security-header, WAF, technology, public-surface, input-handling, and client-visible-string checks.
+- Network Intel with IP geolocation, reverse DNS, RDAP, certificate-transparency, and subdomain lookups.
+- Directory of 2,481 external OSINT and security resource entries.
+- Documentation with API reference, architecture notes, threat model, FAQ, and glossary.
+
+---
+
+<p align="center">
+  <strong>Discover with purpose. Investigate with precision. Use with responsibility.</strong>
+</p>
+
+<p align="center">
+  Qustylex v1.0 · Documentation · Licensed for lawful use only
+</p>
