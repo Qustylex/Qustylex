@@ -605,7 +605,7 @@ Third-party entries in the directory keep their own licenses and terms.
 
 ## 21. Changelog
 
-### Console v3.2 and documentation v1.0 (October 2026)
+### Console v3.4 and documentation v1.0 (november 2026)
 
 - GitHub OAuth sign-in with a signed, seven-day session cookie.
 - URL Scanner for bounded automated assessment of authorized websites.
@@ -620,5 +620,5 @@ Third-party entries in the directory keep their own licenses and terms.
 </p>
 
 <p align="center">
-  Qustylex · Console v3.2 · Documentation v1.0 · Licensed for lawful use only
+  Qustylex · Console v3.4 · Documentation v1.0 · Licensed for lawful use only
 </p>
