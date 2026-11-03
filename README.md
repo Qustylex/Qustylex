@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Version 1.0"/>
-  <img src="https://img.shields.io/badge/console-v3.2-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Console v3.4"/>
+  <img src="https://img.shields.io/badge/console-v3.4-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Console v3.4"/>
   <img src="https://img.shields.io/badge/sign--in-GitHub%20OAuth-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="GitHub OAuth"/>
   <img src="https://img.shields.io/badge/directory-2%2C481%20entries-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="2,481 directory entries"/>
 </p>
