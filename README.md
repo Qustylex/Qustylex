@@ -1,624 +1,330 @@
-<p align="center">
-  <img src="banner.svg" alt="Qustylex: Security and OSINT Research Workspace" width="100%"/>
-</p>
+1. WHAT QUSTYLEX IS — THE OPENING STATEMENT
 
-<p align="center">
-  <img src="https://img.shields.io/badge/version-1.0-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Version 1.0"/>
-  <img src="https://img.shields.io/badge/console-v3.4-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Console v3.4"/>
-  <img src="https://img.shields.io/badge/sign--in-GitHub%20OAuth-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="GitHub OAuth"/>
-  <img src="https://img.shields.io/badge/directory-2%2C481%20entries-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="2,481 directory entries"/>
-</p>
+Qustylex is an independent catalog of verified products sourced from five international suppliers: AliExpress, Alibaba, Temu, Shein, and Wish. That is the first and most important sentence of the entire site: "Cerchiamo prodotti da fornitori affidabili. Tu li vedi e li scegli." — We look for products from reliable suppliers. You see them and you choose them.
 
-<h1 align="center">Qustylex</h1>
+The platform makes three explicit promises in its own words: no registration, no course, no promise of earnings. You open the marketplace, you look, you decide. Zero registration. You see everything immediately.
 
-<p align="center"><strong>A curated research workspace for website security assessment and public-source reference.</strong></p>
+Qustylex does not sell, does not ship, and does not handle payments. It shows the product, the price, the images, and the link, and it takes the user directly to the original store. That is the entire functional definition, stated plainly in the documentation: "Non vendiamo, non spediamo, non gestiamo pagamenti: mostriamo prodotto, prezzo, immagini e link, e portiamo l'utente direttamente al negozio originale."
 
-<p align="center">
-  <a href="https://qustylex.vercel.app">Live site</a> ·
-  <a href="https://qustylex.vercel.app/docs">Documentation</a> ·
-  <a href="https://qustylex.vercel.app/console">Console</a>
-</p>
+The platform is a product catalog, not a storefront. The moment a user clicks "Vedi offerta" — "See offer" — they leave Qustylex and land on the marketplace that actually sells the item. Everything related to the purchase happens there: the cart, the checkout, the payment, the shipping, the return policy, the customer service. Qustylex sees none of it and manages none of it.
+2. WHAT QUSTYLEX IS NOT — THE BOUNDARIES
 
----
+The documentation devotes an entire section to what the platform is not, because clarity of scope is treated as more important than a long feature list.
 
-## Table of Contents
+It is not a shop. There is no cart, no checkout, no payment processing, no returns management, no shipping logistics. When you click "See offer," you are redirected to the original marketplace page, and that marketplace is the actual seller. All purchase-related activity lives there, outside Qustylex's perimeter.
 
-1. [Overview](#1-overview)
-2. [What Qustylex Does and Does Not Do](#2-what-qustylex-does-and-does-not-do)
-3. [Key Capabilities](#3-key-capabilities)
-4. [Who Qustylex Is For](#4-who-qustylex-is-for)
-5. [Responsible Use](#5-responsible-use)
-6. [Getting Started](#6-getting-started)
-7. [The Console](#7-the-console)
-8. [URL Scanner](#8-url-scanner)
-9. [Network Intel](#9-network-intel)
-10. [Public Resource Directory](#10-public-resource-directory)
-11. [Authentication and Sessions](#11-authentication-and-sessions)
-12. [API Reference](#12-api-reference)
-13. [Architecture](#13-architecture)
-14. [Security Model](#14-security-model)
-15. [Data Handling and Privacy](#15-data-handling-and-privacy)
-16. [Reliability and Known Limitations](#16-reliability-and-known-limitations)
-17. [Frequently Asked Questions](#17-frequently-asked-questions)
-18. [Glossary](#18-glossary)
-19. [Contributing and Reporting Security Issues](#19-contributing-and-reporting-security-issues)
-20. [License](#20-license)
-21. [Changelog](#21-changelog)
+It does not run the tools it lists. This is a catalog of products, not a directory of software tools. Each entry is a product card: a title, a price, an image, a category, the name of the source marketplace, and the URL of the original page. Nothing else is stored.
 
----
+It does not promise earnings. The site repeats this in multiple places: no course, no guru, no inflated numbers. The phrase "Nessuna iscrizione, nessun guru" — no signup, no guru — appears directly in the "How it works" section.
 
-## 1. Overview
+It does not certify product quality or availability. The price and availability you see are the state of the product at the moment of the last catalog update. The definitive price is always the one shown by the marketplace at the moment of purchase.
+3. HOW IT WORKS — THE THREE-STEP FLOW
 
-Qustylex is a web-based workspace for website security assessment and open-source research. It combines three things in one place:
+The site describes the entire process in three steps, and it is deliberately simple: no part of the purchase process passes through Qustylex.
+Step 01 — We search
 
-- **URL Scanner**, a lightweight automated assessment of a public website. It sends a small, bounded set of requests to the target, looks for common weaknesses and misconfigurations, and lists what it finds.
-- **Network Intel**, a set of lookups for public infrastructure data such as DNS, registration records, IP context, and certificate-transparency hostnames.
-- **A public resource directory** of 2,481 curated entries that point to public tools and references hosted on GitHub, the web, and other public sources.
+Every product has been found on AliExpress, Alibaba, Temu, Shein, or Wish. The platform does not invent costs and does not inflate market prices: it publishes what the supplier actually applies. The exact wording from the Italian home page: "Ogni prodotto è stato trovato su AliExpress, Alibaba, Temu, Shein o Wish. Non inventiamo costi, non gonfiamo prezzi di mercato: pubblichiamo quello che il fornitore applica davvero."
+Step 02 — We publish
 
-Qustylex is a discovery and analysis aid. It does not install, host, or run the third-party tools it lists. Each directory entry is a link with a description, and the provider controls installation, accounts, pricing, and terms.
+Every product card contains four data points: supplier cost, market price on the marketplaces, sales volume, and an interactive profit calculator. You adjust the price, the commission, and the shipping cost, and you immediately see the margin and the profit. The calculator is not a static number — it is a simulation tool that responds to your inputs.
+Step 03 — You choose
 
-The current platform is **version 1.0**, and the console is **version 3.2**.
+You open /marketplace and you look. No registration, no payment to view the products. The marketplace is public, filterable by category and by supplier. If a product interests you, you open the card and you see the link to the supplier. That is the end of Qustylex's involvement in the transaction.
 
-### Design goals
+The documentation renders the same flow as a vertical diagram: the user opens Qustylex, sees the catalog (product, price, image, source), clicks "See offer," is redirected to the original marketplace (Temu, Shein, AliExpress, or Alibaba), and completes the purchase on the marketplace with their own account and their own terms. Qustylex, in this flow, indexes products from public sources, periodically updates prices and images, shows the marketplace link, and never sees or manages payments.
+4. THE SUPPLIERS — FIVE SOURCES, ONE BY ONE
 
-| Goal | What it means in practice |
-| :--- | :--- |
-| **Clarity** | Every module states what it checks, what data it uses, and what its results do not prove. |
-| **Traceability** | Results are presented with their inputs so they can be reviewed and reproduced. |
-| **Restraint** | Active checks are limited in scope, and the platform asks users to stay within authorization. |
-| **Honesty about limits** | Automated output is a lead to verify, not a verdict. |
+The home page presents five suppliers, each with a short profile. The documentation, however, states that Qustylex aggregates from four marketplaces: Temu, Shein, AliExpress, and Alibaba. Wish is listed among the five suppliers on the home page and in the marketing copy, but the technical documentation consistently describes four sources. This is a known discrepancy in the public-facing material, and it is worth noting as you read the supplier profiles.
+AliExpress
 
----
+A retail marketplace with millions of individual products. No minimum quantity, low prices, longer delivery times. Excellent for first tests and for products under €15. The home page labels it "Test rapido" — quick test — and "Nessuna commissione" — no commission.
+Alibaba
 
-## 2. What Qustylex Does and Does Not Do
+A B2B market for buying stock directly from manufacturers. Variable minimum quantities, better per-unit price. Requires experience with duties and customs. The home page labels it "Reselling in stock" — reselling from stock — and again "Nessuna commissione."
+Temu
 
-Clarity about scope matters more than feature lists, so this section comes first.
+Aggressive prices and local warehouses, better delivery times than AliExpress. Less product choice but a higher average quality control. The home page describes it as "Sourcing" — sourcing — with "Nessuna commissione" implied by the surrounding pattern of labels.
+Shein
 
-### Qustylex does
+Fashion and accessories, highly competitive prices, high sales volumes. Shein dominates the visible product listings on the /marketplace page at the time of this walkthrough: 117 products, with sneakers, sportswear, hoodies, jewelry, and backpacks all tagged "Shein."
+Wish
 
-- Run a limited, automated security assessment of a website or domain that the user is authorized to test.
-- List the weaknesses and configuration issues the assessment detects, with the evidence for each.
-- Run public-data lookups for DNS, registration records, IP context, and certificate-transparency hostnames.
-- Organize public tools and references, hosted on GitHub, the web, and other public sources, so they are easier to find.
+Listed among the five suppliers on the home page and in the marketing copy: "Qustylex è un catalogo indipendente di prodotti verificati su AliExpress, Alibaba, Temu, Shein e Wish." The documentation, however, names only four sources in its technical description. This inconsistency is present in the live material and should be treated as an open point for the operator to resolve.
+5. THE MARKETPLACES WHERE YOU CAN RESELL
 
-### Qustylex does not
+Beyond the five suppliers, the home page lists ten marketplaces where you can resell the products in the catalog. The exact list, displayed in a repeating row on the homepage, is: Amazon, eBay, TikTok Shop, Zalando, Etsy, Shopify, alongside the supplier marketplaces themselves — AliExpress, Alibaba, Temu, Shein, and Wish.
 
-- **Search for people.** It does not search usernames, email addresses, phone numbers, or personal profiles across services.
-- **Trace individuals.** It does not identify, locate, or profile a person.
-- **Access private data.** It does not log into accounts, read private messages, or retrieve non-public information.
-- **Bypass protections.** It does not defeat authentication, authorization, or access controls on third-party systems.
-- **Run the directory's tools.** Directory entries are references. Qustylex does not execute them for users.
-- **Certify security.** A clean result does not mean a website is secure, and a reported finding does not prove exploitability.
+The structural point is this: Qustylex does not care where you resell. It provides the product intelligence — the cost, the market price, the sales volume, the margin calculation — and you take that intelligence to whichever sales channel you operate. The platform is channel-agnostic by design. It is a sourcing and pricing layer, not a storefront layer.
+6. THE CATALOG IN NUMBERS — THE HONEST COUNTERS
 
----
+The home page has a section called "I numeri" — The numbers — with an explicit transparency warning: "Nessun dato gonfiato. Ecco cosa trovi davvero se apri il marketplace adesso." — No inflated data. Here is what you actually find if you open the marketplace now.
 
-## 3. Key Capabilities
+At the time of this walkthrough, the live counters displayed on the home page were all at zero: zero active products in the catalog, zero percent average declared margin, zero suppliers covered, zero marketplaces where you can resell. The page text explicitly says: "0 Prodotti attivi nel catalogo, verificati manualmente. 0% Margine medio dichiarato sulle schede prodotto. 0 Fornitori coperti: AliExpress, Alibaba, Temu, Shein, Wish. 0 Marketplace dove puoi rivendere i prodotti del catalogo."
 
-| Capability | Summary | Requires sign-in |
-| :--- | :--- | :---: |
-| **URL Scanner** | Bounded automated assessment of an authorized website: headers, technology, WAF, public surface, and selected weakness indicators. | Yes |
-| **Network Intel** | DNS, RDAP registration data, IP geolocation and context, reverse DNS, certificate-transparency hostnames, and subdomain discovery. | Yes |
-| **Public directory** | 2,481 curated references to public tools and resources, organized by category. | Yes |
-| **Documentation** | Guides, API reference, architecture notes, FAQ, and glossary. | No |
+This is a striking contrast with the documentation, which gives indicative values of approximately 12,000 indexed products, 4 marketplaces covered, and a 24-hour sync frequency for prices and availability.
 
-Access to the console and the tool API is described in [Section 11](#11-authentication-and-sessions). An open item about session enforcement on the tool API is listed in [Section 16](#16-reliability-and-known-limitations).
+The explanation for the discrepancy is straightforward: the homepage counters appear to be tied to a live database query that is currently returning zero, while the documentation describes the intended or historical scale of the catalog. The /marketplace page, however, does show a live list of products — all currently from Shein — with prices ranging from roughly €27 to €87 and sales volumes in the hundreds or thousands per item.
 
----
+The documentation's "catalog in numbers" table is the authoritative structural description: ~12,000 products, 4 marketplaces, 24-hour sync. The homepage zeroes should be read as a live-state display, not as the actual catalog size.
+7. THE ANALYTICS SECTION — TWELVE CHARTS
 
-## 4. Who Qustylex Is For
+The home page includes an "Analytics" section described as "Il catalogo in dodici grafici" — the catalog in twelve charts. The stated purpose is to show growth, costs, survival, break-even, margins by category, traffic, commissions, risk, suppliers, marketplace coverage, top products, and price ranges. The exact list of twelve chart titles is:
 
-- **Website owners and administrators** who want to review the security configuration of sites they control.
-- **Security professionals** working under a written engagement, with a defined scope, time window, and rules of engagement.
-- **Bug bounty researchers** who work strictly within the scope and rules of a published program.
-- **Students and learners** who want to understand web security concepts, using their own sites or dedicated practice environments.
-- **Researchers** who need a curated, well-described starting point for finding public tools and references.
+    Store growth curve, months 1–12
 
-Qustylex is not intended for anyone who wants to test systems, accounts, or people without permission.
+    Where the first €1,000 goes
 
----
+    Store growth phases
 
-## 5. Responsible Use
+    Break-even point, months 1–18
 
-Public availability is not permission. Before running any active check, be able to answer three questions:
+    Average margin by category
 
-1. **Am I authorized?** Do I own this website, or do I have explicit written permission from its owner to assess it?
-2. **Is my scope defined?** Do I know the exact domain or host, the checks I will run, and the time window?
-3. **Is my purpose legitimate and proportionate?** Am I collecting only what I need, and am I ready to handle the results responsibly?
+    Where traffic comes from
 
-### Principles
+    Average commissions by marketplace
 
-- **Authorization first.** Run the URL Scanner only against assets you own or are explicitly authorized to assess.
-- **Low impact.** Stop immediately if the target becomes unstable, and respect its rate limits and published rules.
-- **Protect people and data.** Do not use Qustylex or its directory to stalk, harass, or expose anyone.
-- **Disclose responsibly.** If you find a real weakness in a system you do not own, report it privately to its owner. Share only the minimum evidence needed, and do not test further.
+    Perceived risk by model
 
-Laws and contracts vary by jurisdiction. This documentation is not legal advice.
+    Products per supplier
 
----
+    Marketplace coverage
 
-## 6. Getting Started
+    Top products by margin
 
-### 6.1 Sign in
+    Price range: cost vs. market, per product
 
-1. Open [qustylex.vercel.app](https://qustylex.vercel.app).
-2. Choose **Continue with GitHub**.
-3. Review the requested permission on GitHub's consent screen. The platform requests `read:user` only, which reads public profile information.
-4. You are redirected to the console at `/console`.
+The framing of this section is important: these are not vanity charts. They are operational intelligence for someone deciding whether a product is worth sourcing and where it is worth selling. The "perceived risk by model" chart and the "break-even point" chart are specifically about the economics of reselling, not about the catalog's own performance.
+8. THE MARKETPLACE PAGE — THE LIVE CATALOG
 
-### 6.2 Run your first assessment
+The /marketplace page is the operational heart of the platform. Its header states: "Prodotti selezionati. Margini calcolati." — Selected products. Calculated margins. The description reads: "Esplora il catalogo, filtra per categoria e usa il calcolatore per capire il profitto prima di acquistare." — Explore the catalog, filter by category, and use the calculator to understand the profit before buying.
 
-1. Open **URL Scanner** from the console sidebar.
-2. Enter only a domain or URL you own or are explicitly authorized to assess.
-3. Start the assessment and wait for the results.
-4. Review each finding in context. Treat every finding as a lead to verify.
-5. Record what you verified, how, and what remains uncertain.
+The page displays three live metrics at the top: "Catalogo LIVE aggiornato in tempo reale" — live catalog updated in real time; "Prezzo €5–30 fascia tipica d'acquisto" — €5–30 typical purchase range; "Simulazione 0 € testa anche prodotti gratis" — €0 simulation, even tests free products.
 
-### 6.3 Explore the directory
+The product cards are dense with decision-relevant data. A typical card shows: the product title, the price, the number of units sold, and the source marketplace tag. At the time of this walkthrough, the visible inventory was entirely Shein, with titles including "Sneaker da skateboard retro alla moda" at €87.70 with 1,346 sold, "Sportive Classic Minimaliste" at €34.59 with 2,307 sold, multiple "Sportive da uomo" variants in the €27–€32 range with sales volumes between 1,700 and 4,800 units, a "Zaino da viaggio compresso" at €30.39 with 2,350 sold, a "ROMWE Men Street Life" hoodie at €30.16 with 694 sold, and a steel jewelry set at €29.20 with 4,299 sold.
 
-1. Open a category from the **Intelligence**, **Defense**, **Offense**, or **Infrastructure** groups.
-2. Browse or search the entries.
-3. Open an entry to read its description, then visit the provider to review its license, documentation, privacy practices, and maintenance status before using it.
+The sales volume numbers are not decorative. They are the demand signal: a product with 4,000+ units sold is a product with proven market pull, and the margin calculator exists precisely to let a reseller decide whether that pull can be converted into profit after commission and shipping.
 
----
+The page footer at the time of this walkthrough showed: "Hai visto tutto. Grazie per aver esplorato." — You have seen everything. Thank you for exploring. And a fallback message: "Nessun prodotto trovato. Prova a cambiare ricerca o categoria." — No products found. Try changing your search or category.
+9. THE PROFIT CALCULATOR — THE CORE TOOL
 
-## 7. The Console
+The profit calculator is the single most important interactive element on the platform, and it deserves its own explanation because it is the mechanism that turns a catalog into a decision tool.
 
-The console (version 3.2) is the operating area of the platform. Its sidebar is organized as follows.
+The calculator is described on the home page as follows: on every product card you find supplier cost, market price on the marketplaces, sales volume, and a profit calculator. You adjust price, commission, and shipping, and you immediately see margin and profit — "Regoli prezzo, commissione e spedizione, vedi subito margine e guadagno."
 
-| Group | Contents | Purpose |
-| :--- | :--- | :--- |
-| **Dashboard** | Overview of the workspace. | Entry point. |
-| **URL Scanner** | Website assessment for authorized targets. | Active, bounded checks. |
-| **Intelligence** | OSINT, Social Media, Breach Data, Geolocation, Dark Web, Threat Intel. | Directory references for public-source research. |
-| **Defense** | Privacy Stack, Cryptography, Forensics, Network Security. | Directory references for defensive and privacy work. |
-| **Offense** | Web Security, Exploitation, AI Security, All Security Tools. | Directory references for authorized testing and security education. |
-| **Infrastructure** | Operating Systems, Cloud and Containers, Mobile Security. | Directory references for platforms and environments. |
-| **Resources** | News. | Curated updates. |
+The logic is transparent and the inputs are entirely in the user's hands. The calculator does not hide fees and does not assume a business model. It takes the three variables that actually determine resale profitability — selling price, platform commission, and shipping cost — and computes the outcome. This is not a promise of earnings; it is arithmetic. The homepage's explicit anti-promise — "nessuna promessa di guadagni" — is what makes the calculator credible: the tool does not tell you that you will make money, it tells you what the numbers look like under your own assumptions.
+10. THE API AND THE DOCUMENTATION — FOR THE TECHNICAL USER
 
-Each category shows the number of entries it contains. A reference in the **Offense** group is a resource for authorized testing and learning. It is not permission to test any system.
+The documentation is written for two distinct user types, and it says so directly: "Il catalogo è pensato per due tipi di utente: chi cerca un prodotto specifico e vuole confrontare il prezzo tra più marketplace, e chi gestisce un proprio store o canale di reselling e ha bisogno di un'API per interrogare il catalogo. La documentazione copre entrambi i casi." — The catalog is designed for two types of user: those looking for a specific product and wanting to compare prices across marketplaces, and those managing their own store or reselling channel who need an API to query the catalog. The documentation covers both cases.
+Quick start for non-developers
 
----
+The documentation's "Quick start" section is deliberately code-free and takes three steps:
 
-## 8. URL Scanner
+    Open the catalog from the home page or from /catalog. Each card shows the product, the source marketplace, the price, and a "Vedi offerta" button.
 
-The URL Scanner runs a bounded automated assessment against a single public website or domain. It performs a small set of controlled requests, in the spirit of a low-intensity vulnerability assessment, and lists the weaknesses and configuration issues it detects with the evidence for each.
+    Filter by marketplace. Products are tagged by source — Temu, Shein, AliExpress, Alibaba — and you can filter to see only what you need.
 
-**The URL Scanner is not a penetration test.** It covers a limited set of checks. It cannot prove that a site is secure, and it cannot prove that a finding is exploitable.
+    Click "Vedi offerta." The button opens the product page on the original marketplace in a new tab. The purchase happens there, not on Qustylex.
 
-### 8.1 Checks
+The data schema
 
-| Check | What it does | How to read the result |
-| :--- | :--- | :--- |
-| **Security headers** | Checks for HSTS, Content-Security-Policy, X-Frame-Options, Referrer-Policy, and related headers. | A missing header is a configuration observation. Judge it against the application's real needs. |
-| **WAF detection** | Looks for fingerprints of common web application firewalls and CDN layers. | A detection indicates a likely provider, not a guarantee of protection. |
-| **Technology stack** | Identifies likely server, framework, and CMS software from public responses. | Version guesses can be wrong. Verify before relying on them. |
-| **Public surface** | Requests a bounded set of common paths and reviews response metadata. | A response is evidence to review. It is not proof of exposure. |
-| **Input-handling signals** | Runs a limited check for selected database error patterns in responses. | Not a comprehensive injection test. Interpret carefully and verify manually within scope. |
-| **Exposed strings** | Searches fetched public content for selected token-like patterns. | Matches can be false positives. Do not use any value you find. Notify the owner. |
+The documentation defines the data model with precision. For each product, Qustylex stores only the fields needed to display it and route the user to the purchase: title, price, images, category, marketplace name, and original page URL. Nothing else. The exact wording is: "Per ogni prodotto conserviamo solo i campi che servono a mostrarlo e a portare l'utente all'acquisto: titolo, prezzo, immagini, categoria, nome del marketplace e URL della pagina originale. Nient'altro."
 
-### 8.2 How the assessment works
+This minimalism is a design choice, not a limitation. The platform is an index, not a database of product descriptions, reviews, inventory levels, or seller histories. It indexes what is public and what is sufficient to make a sourcing decision.
+The two-marketplace comparison use case
 
-1. **Scope check.** The target is normalized into a domain or URL.
-2. **Bounded requests.** A limited number of requests is sent to the target and to public data sources.
-3. **Analysis.** Responses are compared against known indicators.
-4. **Report.** Each detected item is listed with its check, evidence, and a note on its limits.
+The documentation explicitly names the price-comparison use case: a user looking for a specific product and wanting to compare the price across multiple marketplaces. Because the catalog tags every product by source, the same or similar products from different sources can be compared side by side before the user clicks through to the original page. This is the intelligence layer in its simplest form.
 
-Because the assessment sends requests to the target, it is active testing. Use it only within written authorization.
+The documentation is marked "Updated 2026-10" and "~20 min read", with four sources and one schema. It is a living document, not a static brochure.
+11. THE ANTI-BOT GATE — ACCESS CONTROL
 
-### 8.3 Interpreting findings
+Every major page — the homepage, the marketplace, and the documentation — is protected by an anti-bot verification gate. The homepage states: "Verifica di sicurezza. Accesso protetto. Completa la verifica anti-bot per entrare su Qustylex." — Security check. Protected access. Complete the anti-bot verification to enter Qustylex. The documentation page states: "Security Check. Verifica anti-bot. Un secondo per proteggere la documentazione da traffico automatizzato." — One second to protect the documentation from automated traffic.
 
-1. **Confirm scope.** Make sure the target is inside your authorization.
-2. **Read in context.** Consider whether the signal applies to this system, configuration, and purpose.
-3. **Verify manually and safely.** Reproduce the signal with the least intrusive method that works, within scope.
-4. **Document.** Record the check, the result, your verification steps, and your conclusion, including what you could not confirm.
-5. **Report.** If a finding is real and affects a system you do not own, send it to the owner through their published disclosure channel.
+The purpose is explicitly stated: to protect the catalog and the documentation from automated traffic. This is consistent with a platform whose value is the curated index itself — if the index were freely scrapable by bots, the curation effort would be trivially replicated. The anti-bot gate is the perimeter defense of the catalog's value proposition.
+12. PRICING AND AVAILABILITY — THE DISCLAIMER
 
-### 8.4 Limits
+The documentation is precise about the temporal nature of the data. What you see on Qustylex is the state of the product at the moment of the last catalog update. The definitive price is always the one shown by the marketplace at the moment of purchase. This is stated twice, in different sections, because it is the single most important operational caveat for a reseller: the catalog is a snapshot, not a live feed.
 
-- Results depend on how the target responds at that moment, on network conditions, and on upstream services.
-- Targets may block, rate-limit, or alter responses, which can hide or distort signals.
-- A result is a snapshot taken when the assessment ran.
+The practical implication: between a Qustylex sync and a user's purchase, the price can change, the product can sell out, and the availability can shift. The reseller must verify the current state on the source marketplace before committing to a purchase or a listing.
+13. THE HOMEPAGE STRUCTURE — A SECTION-BY-SECTION WALKTHROUGH
 
----
+For completeness, here is the full structural sequence of the homepage, in the order a visitor encounters it:
 
-## 9. Network Intel
+Section 0 — The anti-bot gate. Security verification before access.
 
-Network Intel provides lookups for domains, IP addresses, and infrastructure. It aggregates public data so common questions can be answered from one interface.
+Section 1 — The hero statement. "Cerchiamo prodotti da fornitori affidabili. Tu li vedi e li scegli." The definition of Qustylex, the five suppliers, and the three promises: no registration, no course, no promise of earnings. The two key metrics: 5 suppliers, 10 marketplaces.
 
-| Module | Description | Typical question |
-| :--- | :--- | :--- |
-| **IP geolocation** | City, country, ISP, ASN, and timezone for an IPv4 or IPv6 address. | Which network and region does this address belong to? |
-| **Reverse DNS** | Hostnames that point back to an IP address. | Which names are associated with this address? |
-| **WHOIS and RDAP** | Registration data for domains and IP ranges, where published. | Who registered this domain, and when? |
-| **Certificate transparency** | Hostnames listed in public certificate-transparency logs. | Which hosts have certificates issued for this domain? |
-| **Subdomain discovery** | Subdomains found in public certificate and DNS data. | Which names exist under this domain in public records? |
+Section 2 — The supplier/marketplace row. The repeating list of AliExpress, Alibaba, Temu, Shein, Wish, Amazon, eBay, TikTok Shop, Zalando, Etsy, Shopify. This is the visual proof of breadth: five sources, ten sales channels.
 
-### 9.1 Interpreting Network Intel data
+Section 3 — "Come funziona" — How it works. The three-step flow: We search (verified products, real costs), We publish (cards with real numbers, profit calculator), You choose (open /marketplace, no registration, click through to the supplier).
 
-- **Registration data is often redacted.** Privacy services and regional rules hide details. A missing field is not an error.
-- **Certificate transparency shows issued certificates, not live services.** A hostname may be retired or never resolved.
-- **Geolocation is approximate.** An IP address often resolves to the provider's network location, not a user's physical location.
-- **Upstream providers set their own limits.** Results can be delayed or incomplete.
+Section 4 — "I numeri" — The numbers. The transparency warning and the four live counters, which currently read zero but which the documentation describes as ~12,000 products, 4 marketplaces, and 24-hour sync.
 
----
+Section 5 — "Analytics" — Twelve charts. The catalog in twelve visualizations: growth, costs, survival, break-even, margins, traffic, commissions, risk, suppliers, coverage, top products, price ranges.
 
-## 10. Public Resource Directory
+Section 6 — "Fornitori" — Suppliers. Five suppliers, each profiled one by one with use-case guidance: AliExpress for quick tests under €15, Alibaba for B2B stock with customs experience, Temu for local warehouses and better delivery, Shein for fashion and volume, Wish listed as the fifth source.
 
-The directory contains **2,481 curated entries** that point to public tools and references. Entries are maintained as links and descriptions, not as software bundled with Qustylex.
+Section 7 — The closing. "Discover with purpose. Assess with authorization. Verify before you conclude." — though this specific closing line belongs to the previous OSINT-era documentation and appears to be a legacy artifact; the current site's closing is the supplier/marketplace list and the no-registration promise.
+14. THE /MARKETPLACE PAGE STRUCTURE — A SECTION-BY-SECTION WALKTHROUGH
 
-### 10.1 Entries by category
+Section 0 — Anti-bot gate. "Completa la verifica per accedere al marketplace."
 
-| Section | Category | Entries |
-| :--- | :--- | ---: |
-| **Intelligence** | OSINT | 609 |
-| | Social Media | 262 |
-| | Breach Data | 102 |
-| | Geolocation | 300 |
-| | Dark Web | 64 |
-| | Threat Intel | 187 |
-| **Defense** | Privacy Stack | 20 |
-| | Cryptography | 195 |
-| | Forensics | 427 |
-| | Network Security | 195 |
-| **Offense** | Web Security | 26 |
-| | Exploitation | 10 |
-| | AI Security | 10 |
-| | All Security Tools | 38 |
-| **Infrastructure** | Operating Systems | 16 |
-| | Cloud and Containers | 12 |
-| | Mobile Security | 8 |
-| **Total** | | **2,458** |
+Section 1 — Header. "Sourcing & Reselling. Prodotti selezionati. Margini calcolati." — Sourcing and reselling. Selected products. Calculated margins.
 
-### 10.2 What an entry is
+Section 2 — Instructions. "Esplora il catalogo, filtra per categoria e usa il calcolatore per capire il profitto prima di acquistare."
 
-Each entry contains a name, a short description, a category, and a link to its source. Entries typically point to public repositories on GitHub or to websites and documentation.
+Section 3 — Live metrics. Catalog LIVE in real time, €5–30 typical purchase range, €0 simulation including free products.
 
-- Qustylex does not install these tools.
-- Qustylex does not run them for users.
-- Qustylex does not control their availability, pricing, accounts, or privacy practices.
+Section 4 — Product grid. The product cards, each with title, price, units sold, and source tag. At the time of this walkthrough, 117 Shein products were visible, with prices from roughly €27 to €87 and sales volumes up to 4,800 units.
 
-### 10.3 Using the directory responsibly
+Section 5 — Footer. "Hai visto tutto. Grazie per aver esplorato." and the fallback "Nessun prodotto trovato. Prova a cambiare ricerca o categoria."
+15. THE /DOCS PAGE STRUCTURE — A SECTION-BY-SECTION WALKTHROUGH
 
-- **Check the source before use.** Review the license, documentation, maintenance status, and any privacy notice.
-- **Do not assume a link is current or safe.** Projects can be archived, renamed, or compromised. Verify before installing anything.
-- **Respect the purpose.** A listing does not authorize use against any system or person.
-- **Handle sensitive categories with care.** Breach data, dark web, and geolocation references can expose personal information. Use them only for a legitimate, proportionate purpose.
+Section 0 — Anti-bot gate. One second to protect the documentation from automated traffic.
 
----
+Section 1 — Title and definition. "Il catalogo prodotti che unisce Temu, Shein, AliExpress e Alibaba." — The product catalog that unites Temu, Shein, AliExpress, and Alibaba. The definition follows immediately: an index of products already on sale on international marketplaces. No selling, no shipping, no payment management. The documentation explains where the data comes from, how it is structured, and how to integrate it.
 
-## 11. Authentication and Sessions
+Section 2 — The two user types. The price comparer and the store operator/reseller who needs an API. Both are covered.
 
-Qustylex uses **GitHub OAuth 2.0** for sign-in. No separate Qustylex password is created.
+Section 3 — What QUSTYLEX is not. Not a shop. No cart, no checkout, no payment, no returns, no shipping. "Vedi offerta" redirects to the original marketplace, the actual seller. All purchase activity happens there.
 
-### 11.1 Sign-in flow
+Section 4 — Quick start. Three steps, no code: open the catalog, filter by marketplace, click "Vedi offerta."
 
-1. **Initiation.** The user selects *Continue with GitHub*. The server creates a random `state` value, stores it in a cookie, and redirects to GitHub.
-2. **Authorization.** The user approves access on GitHub, which redirects back with a temporary `code` and the original `state`.
-3. **Verification.** The server checks that `state` matches the stored value and that the issuer is GitHub's OAuth server. A mismatch stops the flow.
-4. **Token exchange.** The server exchanges the `code` for a short-lived token and uses it to read the user's profile. The token is not stored in the session and is not sent to the browser.
-5. **Session creation.** The profile fields needed by the console are placed in a signed cookie.
+Section 5 — Prices and availability. The snapshot disclaimer. The price you see is the state at the last update. The definitive price is the marketplace price at purchase.
 
-### 11.2 Scope
+Section 6 — How it works. The vertical flow diagram and the Qustylex role in the flow: indexes from public sources, updates periodically, shows the link, never sees or manages payments.
 
-| Scope | Purpose | Data read |
-| :--- | :--- | :--- |
-| `read:user` | Read public profile information. | Username, ID, display name, avatar, bio, public repository count, follower counts, profile URL. |
+Section 7 — The catalog in numbers. The table: ~12,000 products, 4 marketplaces, 24-hour sync frequency.
+16. THE ECONOMIC LOGIC — WHY THIS MODEL EXISTS
 
-### 11.3 Session cookie
+Step back from the page structure and the economic logic of Qustylex becomes clear.
 
-| Property | Value |
-| :--- | :--- |
-| Name | `qstx_user` |
-| Format | `<base64(JSON payload)>.<hex(HMAC-SHA256)>` |
-| Flags | `HttpOnly; Secure; SameSite=Lax` |
-| Maximum age | 7 days (604,800 seconds) |
+Reselling and dropshipping have a sourcing problem and a pricing problem. The sourcing problem: which product, from which supplier, at what cost? The pricing problem: at what price can it be sold on which marketplace, after commission and shipping, and still leave a margin?
 
-The payload is **base64-encoded and signed, not encrypted**. The signature protects integrity, so a modified cookie is rejected, but the contents are readable.
+Qustylex addresses both problems with one artifact: the product card. The card contains the supplier cost (the sourcing answer), the market price and sales volume (the demand answer), and the profit calculator (the margin answer). A reseller does not need to visit five supplier sites, run five searches, and build a spreadsheet. The intelligence is pre-assembled.
 
-### 11.4 Signing out and revoking access
+The platform's refusal to sell, ship, or handle payments is not a limitation — it is the trust mechanism. By staying out of the transaction, Qustylex avoids the conflicts of interest that come with being a seller. It does not favor its own inventory because it has none. It does not inflate prices because it does not collect them. The catalog's value depends on its neutrality, and the neutrality depends on the platform never becoming a party to the sale.
 
-- **Signing out** clears the browser cookie.
-- **Revoking access** is done in GitHub under *Settings → Applications → Authorized OAuth Apps*. Signing out does not revoke the GitHub grant.
+The profit calculator reinforces this. It is not a recommendation engine. It does not say "buy this." It says: here are the numbers, set your own price, your own commission, your own shipping, and see what happens. The user remains the decision-maker. The platform remains the intelligence layer.
+17. THE SUPPLIER-SIDE LOGIC — WHY FIVE SOURCES MATTER
 
----
+A catalog with one source is a store. A catalog with five sources is a comparison engine.
 
-## 12. API Reference
+AliExpress gives breadth and low entry cost — millions of individual products, no minimum quantity, ideal for testing under €15. Alibaba gives depth and unit economics — B2B stock from manufacturers, better per-unit price, but with customs and duty complexity. Temu gives speed and local warehousing — better delivery times, less choice, higher average quality control. Shein gives fashion velocity — high volume, competitive pricing, proven demand. Wish gives generalist breadth — low prices, general merchandise.
 
-**Base URL:** `https://qustylex.vercel.app/api`
+The five-source structure is a portfolio approach to sourcing. No single source is optimal for every product or every reseller. The catalog does not privilege one source; it indexes all of them and lets the user filter. The Shein dominance in the current live product list is a function of what has been indexed and synced, not a statement about which source is best.
+18. THE SALES-SIDE LOGIC — WHY TEN MARKETPLACES MATTER
 
-### 12.1 Authentication
+The ten marketplaces — Amazon, eBay, TikTok Shop, Zalando, Etsy, Shopify, plus the five supplier marketplaces themselves — represent the distribution surface of the reselling model. The catalog does not care where you sell; it cares that you can calculate the margin for where you sell.
 
-The console and the tool endpoints are designed to require a valid, unexpired session cookie. Requests without one receive `401 Unauthorized`. Browser requests on the same origin send the cookie automatically. Command-line requests must include it explicitly. See [Section 16](#16-reliability-and-known-limitations) for an open item about enforcement on `/api/tools`.
+The commission structure differs across these marketplaces. Amazon has referral fees and fulfillment fees. eBay has final value fees. TikTok Shop has commission and affiliate structures. Etsy has listing and transaction fees. Shopify has subscription and payment processing fees. The profit calculator's commission input is the abstraction layer: whatever your channel charges, you enter it, and the margin reflects it.
 
-### 12.2 `GET /api/auth/me`
+This is why the "Commissioni medie per marketplace" chart exists in the analytics section. The catalog is not just a product index; it is a margin index across channels.
+19. THE DATA MODEL — WHAT IS STORED AND WHAT IS NOT
 
-Returns the profile of the authenticated user. The client uses it to confirm the session is still valid.
+The documentation's minimalism is worth restating in full because it defines the platform's technical identity. For each product, Qustylex stores: title, price, images, category, marketplace name, original page URL. Nothing else.
 
-```javascript
-const response = await fetch('/api/auth/me', {
-  credentials: 'same-origin',
-  cache: 'no-store',
-  headers: { Accept: 'application/json' }
-});
-```
+What is not stored: product descriptions, reviews, ratings, seller histories, inventory levels, shipping estimates, return policies, promotional status, variant details. These are all left to the source marketplace. The catalog is a pointer, not a replica.
 
-| Status | Meaning |
-| :--- | :--- |
-| `200 OK` | Valid session. The response contains the user object. |
-| `401 Unauthorized` | No session, invalid signature, or expired session. |
-| `500 Internal Server Error` | Server misconfiguration or internal error. |
+This has three consequences. First, the index can scale to ~12,000 products without becoming a data-quality nightmare, because the fields are few and the source of truth is always external. Second, the legal exposure is minimized: the platform indexes public product information and links out; it does not reproduce the marketplace's full content. Third, the update cycle is fast: a 24-hour sync of price and image is tractable when those are the only volatile fields.
+20. THE USER JOURNEY — THREE ARCHETYPES
+Archetype 1 — The price comparer
 
-### 12.3 `GET /api/tools`
+A user wants a specific product and wants to know whether it is cheaper on Temu, Shein, AliExpress, or Alibaba. They open the catalog, search or filter by category, find the same or similar product tagged by multiple sources, compare the prices, and click through to the source with the best price. The profit calculator is secondary for this user; the comparison is the value.
+Archetype 2 — The store operator
 
-Routes an assessment or lookup request to a supported tool.
+A user runs a Shopify store or an eBay store and wants to source products with proven demand. They open the catalog, filter by category or source, look at the sales volume on each card to identify proven demand, use the profit calculator to check whether the margin survives their channel's commission and their shipping cost, and then click through to the supplier to place a sourcing order. This is the core reselling use case, and the catalog is built for it.
+Archetype 3 — The API integrator
 
-| Parameter | Required | Type | Description |
-| :--- | :---: | :--- | :--- |
-| `type` | Yes | string | The route identifier, for example `domain-full`, `dns-all`, or `whois`. |
-| `q` | Yes | string | The target: a domain, IP address, or URL. |
-| `record` | No | string | Optional for routes that accept a DNS record type, such as `dns-propagation`. |
+A user operates a reselling channel at scale and wants to query the catalog programmatically. They read the documentation, understand the data schema (title, price, images, category, source, URL), and build an integration that pulls product data from the API into their own store or pricing engine. The API is the bridge between the catalog's intelligence and the integrator's infrastructure.
+21. THE TRANSPARENCY STANCE — WHY THE ZEROES MATTER
 
-**DNS lookup** (requires a session cookie)
+The homepage's four zeroes — zero products, zero percent margin, zero suppliers, zero marketplaces — are not a bug in the narrative. They are the most honest thing on the site.
 
-```bash
-curl -X GET "https://qustylex.vercel.app/api/tools?type=dns-all&q=example.com" \
-  -H "Accept: application/json" \
-  -H "Cookie: qstx_user=<your signed session value>"
-```
+A platform that claims 12,000 products while its live counter reads zero is telling you something important: the counter is live and the marketing is aspirational. The documentation's ~12,000 figure is labeled "indicative," not absolute. The homepage explicitly warns against inflated data: "Nessun dato gonfiato."
 
-**Domain assessment** (requires a session cookie and an authorized target)
+In a space — reselling and dropshipping — that is saturated with inflated income claims, fake scarcity, and guru-style promises, the zeroes function as a credibility signal. The platform would rather show you a live zero than a fabricated thousand. The documentation's indicative scale and the homepage's live counters are two different instruments measuring two different things: intended capacity versus current state.
+22. KNOWN INCONSISTENCIES AND OPEN POINTS
 
-```bash
-curl -X GET "https://qustylex.vercel.app/api/tools?type=domain-full&q=example.com" \
-  -H "Accept: application/json" \
-  -H "Cookie: qstx_user=<your signed session value>"
-```
+A complete walkthrough must include the points where the public material does not agree with itself, because those are the points an operator or a user should verify.
 
-Route names and parameters may change between releases. Check the current documentation before building an integration.
+The supplier count. The homepage says five suppliers: AliExpress, Alibaba, Temu, Shein, and Wish. The documentation says four sources: Temu, Shein, AliExpress, and Alibaba. Wish is absent from the technical schema. This is a live inconsistency in the public material.
 
-### 12.4 Error responses
+The product count. The homepage live counters read zero. The documentation gives an indicative ~12,000. The /marketplace page shows 117 Shein products. These are three different measurements: live query, intended scale, and current visible inventory.
 
-Every error uses the same JSON shape:
+The marketplace count. The homepage lists ten resale marketplaces (Amazon, eBay, TikTok Shop, Zalando, Etsy, Shopify, plus the five suppliers). The documentation's "catalog in numbers" table says four marketplaces covered — referring to the four supplier sources, not the ten resale channels. The word "marketplace" is used in two different senses: source marketplace versus sales marketplace.
 
-```json
-{
-  "ok": false,
-  "error": "bad_request",
-  "message": "Missing required parameter: q"
-}
-```
+The legacy closing line. The phrase "Discover with purpose. Assess with authorization. Verify before you conclude." belongs to the platform's previous identity as an OSINT and security research workspace. It is a legacy artifact and does not describe the current reselling catalog. The current site's actual closing is the no-registration promise and the supplier/marketplace list.
+23. THE FULL SCRIPT — THE NARRATIVE IN ONE CONTINUOUS VOICE
 
-| HTTP status | Error code | Cause |
-| :---: | :--- | :--- |
-| `400` | `bad_request` | A required parameter is missing or malformed. |
-| `401` | `unauthorized` | No valid, unexpired session. |
-| `403` | `forbidden` | The target is a private or local address, which the handler blocks. |
-| `404` | `not_found` | The route identifier is unknown. |
-| `405` | `method_not_allowed` | The request method is not `GET`. |
-| `500` | `server_error` | An upstream provider or the tool handler failed. |
+If you were to read the entire site aloud as a single continuous monologue, this is what it would say:
 
-### 12.5 Rate limits
+Qustylex is an independent catalog of verified products from reliable suppliers — AliExpress, Alibaba, Temu, Shein, and Wish. You see the products, you choose the products. There is no registration, no course, and no promise of earnings. You open the marketplace, you look, you decide. Five suppliers, ten marketplaces where you can resell. The process is three steps and it is deliberately simple. First, we search: every product has been found on one of the suppliers, and we publish the real cost the supplier applies — we do not invent costs and we do not inflate market prices. Second, we publish: every card shows supplier cost, market price on the marketplaces, sales volume, and a profit calculator where you set the price, the commission, and the shipping, and you immediately see the margin and the profit. Third, you choose: you open the marketplace, no registration, no payment to view, filter by category and supplier, open the card, and see the link to the supplier. The marketplace is public. The numbers are honest: no inflated data. The catalog contains roughly twelve thousand indexed products, four marketplace sources, and a twenty-four-hour sync for prices and availability. The analytics section shows the catalog in twelve charts — growth, costs, survival, break-even, margins, traffic, commissions, risk, suppliers, coverage, top products, and price ranges. The five suppliers each serve a different sourcing strategy: AliExpress for quick tests under fifteen euros, Alibaba for B2B stock with customs experience, Temu for local warehouses and better delivery, Shein for fashion and volume, Wish for generalist breadth. The ten resale marketplaces are Amazon, eBay, TikTok Shop, Zalando, Etsy, Shopify, and the five supplier marketplaces themselves. We are not a shop. We do not handle carts, checkout, payments, returns, or shipping. When you click "Vedi offerta," you go to the original marketplace, and that marketplace is the actual seller. Everything about the purchase happens there. What we store is only what is needed to show the product and route you to the purchase: title, price, images, category, marketplace name, and original page URL. Nothing else. The price you see is the state at the last catalog update; the definitive price is always the marketplace price at the moment of purchase. This is not a promise of earnings. It is a catalog, a calculator, and a link. You decide what to do with it.
+24. THE FINAL MAP — THE ONE-PAGE SUMMARY
 
-The current tool handler does not implement an application-level rate limiter. Hosting and upstream limits may still apply. Keep request volume low, and do not design integrations that depend on a specific limit.
+For a reader who wants the entire system on a single mental page:
+text
 
----
+QUSTYLEX IN ONE PAGE
+════════════════════
 
-## 13. Architecture
+WHAT IT IS
+  An independent product catalog for reselling and dropshipping.
+  Indexes products from AliExpress, Alibaba, Temu, Shein, and Wish.
+  Shows title, price, images, category, source, URL.
+  Provides a profit calculator (price / commission / shipping → margin).
+  Provides an API for store operators and integrators.
 
-Qustylex is a static web application with serverless API routes. Authentication and tool routes run as serverless functions. Live results depend on external data providers.
+WHAT IT IS NOT
+  Not a shop. No cart, no checkout, no payment, no returns, no shipping.
+  Not a promise of earnings. No course, no guru, no inflated numbers.
+  Not the seller. The marketplace is the seller.
+  Not a live price feed. It is a snapshot; the marketplace price is definitive.
 
-```mermaid
-flowchart LR
-    U[User browser] -->|Static pages| S[Static site: console and docs]
-    U -->|OAuth and session| A[/api/auth/*/]
-    U -->|JSON requests| T[/api/tools/]
-    A -->|Code exchange| G[(GitHub OAuth)]
-    T -->|DNS, RDAP, certificate and IP data| P[(Public data providers)]
-    T -->|Bounded requests| X[(Authorized public target)]
-```
+HOW IT WORKS
+  01 SEARCH    → Products found on the five suppliers.
+  02 PUBLISH   → Cards with real cost, market price, sales volume, calculator.
+  03 CHOOSE    → Open /marketplace, filter, click "Vedi offerta," buy on source.
 
-### 13.1 Components
+THE NUMBERS
+  ~12,000 indexed products (indicative, per documentation).
+  4 marketplace sources in the technical schema (Temu, Shein, AliExpress, Alibaba).
+  5 suppliers in the marketing copy (the above plus Wish).
+  10 resale marketplaces (Amazon, eBay, TikTok Shop, Zalando, Etsy, Shopify + 5 suppliers).
+  24-hour sync for prices and availability.
+  117 Shein products visible on /marketplace at the time of this walkthrough.
 
-| Component | Responsibility |
-| :--- | :--- |
-| **Static site** | Landing page, documentation, and console interface. |
-| **Auth routes** | GitHub OAuth initiation and callback, session creation, and profile check. |
-| **Tool routes** | Dispatch for URL Scanner and Network Intel requests. |
-| **Directory** | Static catalog of 2,481 entries with descriptions and links. |
-| **Upstream providers** | Public DNS, RDAP, IP-intelligence, and certificate-transparency sources. |
+THE SUPPLIERS
+  AliExpress  → Quick tests, under €15, no minimum.
+  Alibaba     → B2B stock, customs experience needed.
+  Temu        → Local warehouses, better delivery, less choice.
+  Shein       → Fashion, high volume, proven demand.
+  Wish        → Generalist breadth, low prices.
 
----
+THE RESALE CHANNELS
+  Amazon · eBay · TikTok Shop · Zalando · Etsy · Shopify
+  + the five supplier marketplaces themselves.
 
-## 14. Security Model
+THE ACCESS
+  Anti-bot gate on homepage, marketplace, and documentation.
+  No registration to view the catalog.
+  No payment to use the calculator or the API documentation.
 
-This section describes intended controls. It is not a security certification, and the deployed service should be verified independently.
+THE TRUST MECHANISM
+  The platform stays out of the transaction.
+  It does not compete with its users.
+  It does not inflate prices because it does not collect them.
+  It shows live zeroes rather than fabricated thousands.
+  The calculator is arithmetic, not advice.
 
-### 14.1 Controls
+THE OPEN POINTS
+  Supplier count: five in marketing, four in documentation.
+  Product count: zero live, ~12,000 indicative, 117 visible.
+  "Marketplace" used in two senses: source and sales channel.
+  A legacy OSINT-era closing line remains on the homepage.
 
-| Control | Purpose |
-| :--- | :--- |
-| **OAuth state validation** | Prevents cross-site request forgery during sign-in. |
-| **Issuer check** | Confirms the authorization response came from GitHub's OAuth server. |
-| **Signed session cookie** | Detects tampering with the session payload. |
-| **Seven-day session limit** | Limits how long a session remains valid. |
-| **`HttpOnly` cookie** | Keeps the cookie value away from page scripts. |
-| **`Secure` cookie** | Sends the cookie only over HTTPS. |
-| **`SameSite=Lax`** | Reduces cross-site request forgery risk while allowing normal navigation. |
-| **Private-address blocking** | The tool handler rejects private and local addresses. |
-
-### 14.2 Threats considered
-
-- Credential theft through cross-site scripting or cross-site request forgery.
-- Session hijacking through cookie theft.
-- Unauthorized access through broken authorization.
-- Injection attacks against the platform itself.
-- Abuse through excessive requests.
-- Attacks on the OAuth flow.
-
-### 14.3 Limits of this model
-
-- A signed cookie is not encryption.
-- `HttpOnly` does not stop malicious scripts running on the same origin.
-- Security depends on the deployed configuration, hosting platform, and upstream providers.
-
----
-
-## 15. Data Handling and Privacy
-
-The repository and documentation describe some data handling. Hosting logs, backups, provider retention, and production settings are controlled by the deployment and by upstream providers. The operator should publish a deployment-specific privacy notice covering these details.
-
-| Data | Purpose | Retention |
-| :--- | :--- | :--- |
-| **GitHub profile fields** | Identify and display the signed-in user. | Stored in the session cookie for up to seven days. |
-| **GitHub access token** | Used once to read the profile. | Discarded after the lookup. Not stored in the cookie or sent to the browser. |
-| **Assessment and lookup inputs** | Sent to the tool API and, depending on the check, to public data providers or the target. | Not established by this repository. Verify the deployed service and each provider's policy. |
-
-### 15.1 Your rights
-
-To ask what data is associated with your account, request a correction, or request deletion, contact the operator through its published privacy channel. Completion times depend on the deployed service and applicable law.
-
-### 15.2 What not to submit
-
-- Credentials, secrets, or API keys belonging to anyone.
-- Personal data about third parties without a lawful, specific purpose.
-- Confidential information of an employer or client without authorization.
-
----
-
-## 16. Reliability and Known Limitations
-
-Qustylex is version 1.0. It is useful as a structured starting point, but its output should be treated as evidence to verify, not as a final judgment.
-
-### 16.1 How reliable are the results?
-
-- **Assessment results are signals.** They can be false positives, can miss real issues, and can change between runs.
-- **Technology and WAF detection are estimates.** They are based on public responses, which a target can alter.
-- **Geolocation is approximate.** It often reflects a network provider, not a physical location.
-- **Directory entries are external.** Their accuracy, safety, and availability are controlled by their providers.
-
-### 16.2 Open items
-
-| # | Item | Current state | Action |
-| :---: | :--- | :--- | :--- |
-| 1 | **Session enforcement on `/api/tools`** | The documentation says the route requires a valid session, but the handler described in the same documentation does not verify one. | Verify the deployed code, enforce the session check on the server, and test it with an unauthenticated request. |
-| 2 | **Rate limiting** | No application-level rate limit is documented for the tool handler. | Add per-session and per-address limits on active routes. |
-| 3 | **Retention and logging** | Retention for hosting logs, providers, and backups is not documented. | Publish a deployment-specific privacy notice. |
-| 4 | **Account deletion** | No self-service deletion is documented. | Document the request process or add a self-service option. |
-| 5 | **Directory accuracy** | External links change over time. | Schedule periodic link and status reviews. |
-| 6 | **Version consistency** | The documentation refers to platform v1.0 and the console shows v3.2. | Align version references across the documentation and the interface. |
-| 7 | **License** | Not yet defined for the platform code or original content. | Choose and publish a license. |
-| 8 | **Security contact** | Not yet published. | Publish a contact and disclosure policy. |
-
-Items 1 and 2 concern how active routes are protected. They should be resolved before any claim that the platform enforces authorization or limits abuse.
-
----
-
-## 17. Frequently Asked Questions
-
-**Can Qustylex search for a person by username or email?**
-No. Qustylex does not run username, email, phone, or people searches. Its directory may list external public references in those areas, but Qustylex does not perform the searches itself.
-
-**What does the URL Scanner do?**
-It runs a bounded automated assessment of a website you are authorized to test. It checks for selected weaknesses and configuration issues, and it lists what it finds with the evidence for each.
-
-**Is the URL Scanner passive?**
-No. It sends requests to the target. Treat it as active testing and use it only within written authorization.
-
-**Is a finding a confirmed vulnerability?**
-No. A finding is a signal. Verify it safely and manually within your authorization before drawing conclusions.
-
-**Is a clean result proof that a site is secure?**
-No. The scanner covers a limited set of checks. A clean result only means those checks did not detect an issue at that time.
-
-**Is Qustylex legal to use?**
-No tool can make every use lawful. Use active checks only on systems you own or are explicitly authorized to assess, and consult qualified legal advice when needed.
-
-**Does Qustylex run the tools in its directory?**
-No. Each entry links to an external project or service. The provider controls installation, accounts, pricing, and terms.
-
-**Are all directory links current and safe?**
-No. Projects change, move, or disappear. Review each source before relying on it.
-
-**Does Qustylex make me anonymous?**
-No. No platform or tool can guarantee anonymity.
-
-**Why sign in with GitHub?**
-GitHub is the only identity provider. This avoids storing passwords for Qustylex accounts. The scope requested is listed in [Section 11.2](#112-scope).
-
-**Does Qustylex store my GitHub token?**
-No. The token is used once to read your profile and then discarded.
-
-**Is the session cookie encrypted?**
-No. It is base64-encoded and signed. The signature protects integrity, not confidentiality.
-
-**How do I report a security issue?**
-Use the security contact published by the operator. Do not post details publicly, and do not include real credentials or personal data in your report.
-
----
-
-## 18. Glossary
-
-| Term | Definition |
-| :--- | :--- |
-| **OSINT** | Open-Source Intelligence: information gathered from publicly available sources. |
-| **OPSEC** | Operational Security: practices that limit unnecessary exposure of information. |
-| **DNS** | Domain Name System: translates domain names into addresses and publishes other records. |
-| **RDAP** | Registration Data Access Protocol: a structured successor to WHOIS. |
-| **Certificate transparency** | Public, append-only logs of issued TLS certificates. |
-| **WAF** | Web Application Firewall: a filter that inspects web traffic for malicious patterns. |
-| **HSTS** | HTTP Strict Transport Security: tells browsers to use HTTPS only for a domain. |
-| **CSP** | Content-Security-Policy: restricts which resources a page may load and run. |
-| **OAuth 2.0** | An authorization framework that lets a service access data at a provider without a password. |
-| **HMAC** | Hash-based Message Authentication Code: a signature that shows a message was not altered. |
-| **Authorized scope** | The explicitly approved set of assets, checks, and time window for an assessment. |
-
----
-
-## 19. Contributing and Reporting Security Issues
-
-Community input helps keep the directory accurate and the documentation clear.
-
-### 19.1 Ways to contribute
-
-- Report broken, outdated, or misdescribed directory entries.
-- Suggest well-maintained public tools for an existing category, with the name, purpose, license, and suggested category.
-- Point out documentation gaps or inconsistencies.
-- Share feedback on clarity and usability.
-
-### 19.2 Reporting a security vulnerability
-
-Do not open a public issue for a security vulnerability. Report it privately through the operator's security contact, and allow reasonable time for review before any public disclosure.
-
-> **Maintainers:** publish the security contact and disclosure policy before release, and replace this note with them.
-
----
-
-## 20. License
-
-The Qustylex platform code and original content do not yet have a published license.
-
-> **Maintainers:** choose and publish a license, and state it here.
-
-Third-party entries in the directory keep their own licenses and terms.
-
----
-
-## 21. Changelog
-
-### Console v3.4 and documentation v1.0 (november 2026)
-
-- GitHub OAuth sign-in with a signed, seven-day session cookie.
-- URL Scanner for bounded automated assessment of authorized websites.
-- Network Intel with DNS, RDAP, IP, reverse DNS, certificate-transparency, and subdomain lookups.
-- Public resource directory of 2,481 entries across Intelligence, Defense, Offense, Infrastructure, and Resources.
-- Documentation with API reference, architecture notes, FAQ, and glossary.
-
----
-
-<p align="center">
-  <strong>Discover with purpose. Assess with authorization. Verify before you conclude.</strong>
-</p>
-
-<p align="center">
-  Qustylex · Console v3.4 · Documentation v1.0 · Licensed for lawful use only
-</p>
+THE ONE-SENTENCE VERSION
+  Qustylex is a transparent, neutral product index with a profit
+  calculator and an API — it finds the product and does the math,
+  you make the decision and complete the purchase on the original
+  marketplace.
