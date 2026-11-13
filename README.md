@@ -1,30 +1,16 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Qustylex — Independent product catalog for reselling and dropshipping" width="100%"/>
+  <img src="assets/banner.svg" alt="Qustylex — Independent catalog of verified products for reselling and dropshipping" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Version 1.0"/>
-  <img src="https://img.shields.io/badge/sources-5-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="5 sources"/>
-  <img src="https://img.shields.io/badge/marketplaces-10-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="10 marketplaces"/>
-  <img src="https://img.shields.io/badge/sync-24h-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="24h sync"/>
-  <img src="https://img.shields.io/badge/signup-not%20required-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="No signup required"/>
+  <a href="https://qustylex.vercel.app"><img src="https://img.shields.io/badge/Live_site-open-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Live site"/></a>
+  <a href="https://qustylex.vercel.app/marketplace"><img src="https://img.shields.io/badge/Marketplace-browse-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Marketplace"/></a>
+  <a href="https://qustylex.vercel.app/docs"><img src="https://img.shields.io/badge/Documentation-read-000000?style=for-the-badge&labelColor=000000&color=ffffff" alt="Documentation"/></a>
 </p>
 
-<h1 align="center">Qustylex</h1>
-
-<p align="center"><strong>An independent catalog of verified products for reselling and dropshipping.</strong></p>
-
-<p align="center">
-  <a href="https://qustylex.vercel.app">Live site</a> ·
-  <a href="https://qustylex.vercel.app/marketplace">Marketplace</a> ·
-  <a href="https://qustylex.vercel.app/docs">Documentation</a>
-</p>
+> **Qustylex** is an independent catalog of verified products for reselling and dropshipping. It indexes products from AliExpress, Alibaba, Temu, Shein and Wish, adds a profit calculator, and points you to the original marketplace. No registration, no course, no promise of earnings.
 
 ---
-
-## Overview
-
-Qustylex indexes products already on sale on **AliExpress, Alibaba, Temu, Shein and Wish** and points you to the original listing. It does not sell, ship, or handle payments. Every product card carries the supplier cost, the market price, the sales volume, and a profit calculator.
 
 No registration. No course. No promise of earnings.
 
